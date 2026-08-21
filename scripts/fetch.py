@@ -1,18 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Reddit 每日速览生成器（支持评论 + 动态调节 + 探索推荐）
-
+Reddit 每日速览生成器（支持评论 + 动态调节 + 探索推荐 + 历史归档）
 - 读取 scripts/subreddits.json：每个版块可配 enabled / limit / comments / comments_count
 - 抓取 hot.json 最新热帖，可附带抓取高赞评论
 - 可选 LLM 翻译（LLM_API_KEY）
-- 若存在 scripts/explore.json（由 explore.py 生成），在页面底部渲染"探索推荐"区
+- 历史归档：每天生成 archive/YYYY-MM-DD.html 快照，最新页顶部显示"历史归档"链接
 - 生成 index.html
-
-用法：
-    python3 scripts/fetch.py                 # 默认抓取
-    python3 scripts/fetch.py --no-comments   # 本次跳过所有评论（页面更小）
-    LLM_API_KEY=sk-xxx python3 scripts/fetch.py
 """
 import json
 import os
@@ -32,7 +26,6 @@ UA = "reddit-daily-digest/1.0 (personal non-commercial use)"
 TIMEOUT = 20
 RETRIES = 2
 
-# ---------- 基础 ----------
 
 def http_get(url: str) -> str:
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
@@ -57,7 +50,6 @@ def get_json(url: str):
 
 
 def post_id_from_link(link: str) -> str:
-    """从 https://www.reddit.com/r/x/comments/<id>/... 提取帖子 id"""
     parts = link.rstrip("/").split("/")
     try:
         i = parts.index("comments")
@@ -65,8 +57,6 @@ def post_id_from_link(link: str) -> str:
     except (ValueError, IndexError):
         return ""
 
-
-# ---------- 抓帖子 ----------
 
 def fetch_subreddit(sub: str, limit: int = 4):
     url = f"https://www.reddit.com/r/{sub}/hot.json?limit={limit * 2}&raw_json=1"
@@ -90,10 +80,7 @@ def fetch_subreddit(sub: str, limit: int = 4):
     return posts
 
 
-# ---------- 抓评论 ----------
-
 def fetch_comments(post_id: str, limit: int = 5):
-    """抓取帖子 top 评论。返回 [{author, body, score}]"""
     url = f"https://www.reddit.com/comments/{post_id}.json?limit=100&sort=top&depth=1&raw_json=1"
     data = get_json(url)
     if not data or len(data) < 2:
@@ -115,8 +102,6 @@ def fetch_comments(post_id: str, limit: int = 5):
             break
     return out
 
-
-# ---------- 翻译（可选） ----------
 
 def translate_batch(titles, batch_size=30):
     api_key = os.environ.get("LLM_API_KEY", "").strip()
@@ -158,13 +143,18 @@ def translate_batch(titles, batch_size=30):
     return results
 
 
-# ---------- 渲染 ----------
-
-def render_html(categories, translated, stats, explore=None):
+def render_html(categories, translated, stats, explore=None, archives=None):
     now = datetime.now(CST).strftime("%Y-%m-%d %H:%M")
     nav = "".join(f'<a href="#{c["id"]}">{c["cn"]}</a>' for c in categories)
     if explore:
         nav += '<a href="#explore">探索</a>'
+
+    archives_html = ""
+    if archives:
+        links = []
+        for d in archives:
+            links.append(f'<a href="archive/{d}.html" target="_blank">{d[5:]}</a>')
+        archives_html = ('<div class="archives">📚 历史归档：' + " · ".join(links) + '</div>\n')
 
     blocks = []
     for c in categories:
@@ -204,8 +194,7 @@ def render_html(categories, translated, stats, explore=None):
             f'<section class="cat" id="explore">\n'
             f'  <h2><span class="cn">🔍 探索推荐（未收录的活跃版块）</span>'
             f'<span class="en">想加哪个，在 subreddits.json 里加一行即可</span></h2>\n'
-            + "\n".join(cands) +
-            f'\n</section>'
+            + "\n".join(cands) + f'\n</section>'
         )
 
     return f"""<!DOCTYPE html>
@@ -238,6 +227,9 @@ def render_html(categories, translated, stats, explore=None):
   .cmt-s{{color:#aaa;margin-left:5px;font-size:10px}}
   .nav{{font-size:11px;color:var(--sub);margin-bottom:8px;line-height:1.9}}
   .nav a{{color:var(--accent);text-decoration:none;margin-right:6px}}
+  .archives{{font-size:11.5px;color:var(--sub);background:#fff8f0;border:1px solid #f5e0c8;border-radius:4px;padding:4px 8px;margin-bottom:8px;line-height:1.8}}
+  .archives a{{color:var(--accent);text-decoration:none;margin:0 2px}}
+  .archives a:hover{{text-decoration:underline}}
   footer{{margin-top:10px;padding-top:8px;border-top:1px solid var(--line);color:var(--sub);font-size:11px}}
 </style>
 </head>
@@ -247,7 +239,7 @@ def render_html(categories, translated, stats, explore=None):
   <div class="sub">数据时间：{now}（GMT+8）· {stats["subs"]} 个版块 · 点击英文标题跳转原帖 · 自动更新</div>
   <span class="stats">{stats["subs"]} 版块 / {stats["posts"]} 帖子 / {stats["comments"]} 评论 / 中英双语同页</span>
 </header>
-<div class="nav">{nav}</div>
+{archives_html}<div class="nav">{nav}</div>
 {cats_html}
 {explore_html}
 <footer>
@@ -259,8 +251,6 @@ def render_html(categories, translated, stats, explore=None):
 """
 
 
-# ---------- 主流程 ----------
-
 def main():
     skip_comments = "--no-comments" in sys.argv
     global_limit = None
@@ -271,7 +261,6 @@ def main():
     with open(SUBS_FILE, encoding="utf-8") as f:
         subs = json.load(f)
 
-    # 收集启用的版块
     all_subs = []
     for c in subs["categories"]:
         for s in c["subs"]:
@@ -316,11 +305,25 @@ def main():
             explore = json.load(f)
 
     stats = {"subs": len(all_subs), "posts": total_posts, "comments": total_comments}
-    html = render_html(subs["categories"], translated, stats, explore)
+
+    # ---- 历史归档：每天新增 archive/YYYY-MM-DD.html，永不覆盖 ----
+    ARCHIVE_DIR = os.path.join(BASE_DIR, "archive")
+    os.makedirs(ARCHIVE_DIR, exist_ok=True)
+    today = datetime.now(CST).strftime("%Y-%m-%d")
+    archives = sorted(
+        f[:-5] for f in os.listdir(ARCHIVE_DIR)
+        if f.endswith(".html") and f[:-5] != today
+    )
+
+    html = render_html(subs["categories"], translated, stats, explore, archives)
+
+    with open(os.path.join(ARCHIVE_DIR, today + ".html"), "w", encoding="utf-8") as f:
+        f.write(html)
 
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         f.write(html)
-    print(f"[✓] 已生成 {OUT_FILE}（{len(html)/1024:.0f} KB，{total_posts} 帖 / {total_comments} 评论）")
+    print(f"[✓] 已生成 index.html + archive/{today}.html"
+          f"（{len(html)/1024:.0f} KB，{total_posts} 帖 / {total_comments} 评论，历史归档 {len(archives)} 天）")
 
 
 if __name__ == "__main__":
