@@ -149,12 +149,29 @@ def fetch_subreddit_rss(sub: str, limit: int = 4):
 def fetch_subreddit(sub: str, limit: int = 4):
     url = f"https://www.reddit.com/r/{sub}/hot.json?limit={limit * 2}&raw_json=1"
     data = get_json(url)
-    if not data:
-        print(f"  [!] JSON API 不可用，降级 RSS 抓取 r/{sub}", file=sys.stderr)
+
+    children = []
+    json_ok = False
+    if data and isinstance(data, dict):
+        d = data.get("data", {})
+        if isinstance(d, dict):
+            raw = d.get("children", [])
+            if isinstance(raw, list) and raw:
+                children = raw
+                json_ok = True
+
+    if not json_ok or not children:
+        if data is None:
+            print(f"  [!] JSON API 不可用，降级 RSS 抓取 r/{sub}", file=sys.stderr)
+        elif not json_ok:
+            print(f"  [!] JSON 结构异常，降级 RSS 抓取 r/{sub}", file=sys.stderr)
+        else:
+            print(f"  [!] JSON 返回空列表，降级 RSS 抓取 r/{sub}", file=sys.stderr)
         return fetch_subreddit_rss(sub, limit)
+
     posts = []
-    for c in data["data"]["children"]:
-        d = c["data"]
+    for c in children:
+        d = c.get("data", {}) if isinstance(c, dict) else {}
         if d.get("stickied"):
             continue
         posts.append({
