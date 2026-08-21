@@ -91,13 +91,32 @@ def post_id_from_link(link: str) -> str:
 
 
 def fetch_subreddit_rss(sub: str, limit: int = 4):
-    url = f"https://www.reddit.com/r/{sub}/hot/.rss?limit={limit * 2}"
-    try:
-        xml_text = http_get(url)
-        root = ET.fromstring(xml_text)
-    except Exception:
-        return []
+    rss_urls = [
+        f"https://www.reddit.com/r/{sub}/hot/.rss?limit={limit * 2}",
+        f"https://old.reddit.com/r/{sub}/hot/.rss?limit={limit * 2}",
+    ]
+    for rss_url in rss_urls:
+        for attempt in range(RETRIES):
+            try:
+                xml_text = http_get(rss_url)
+                root = ET.fromstring(xml_text)
+                return _parse_rss_entries(root, limit, sub)
+            except urllib.error.HTTPError as e:
+                print(f"  [!] RSS 请求失败 r/{sub}: HTTP {e.code} (attempt {attempt+1}, {rss_url[:60]})", file=sys.stderr)
+                if e.code in (429, 503):
+                    time.sleep(3 * (attempt + 1))
+                elif e.code == 403:
+                    time.sleep(5 * (attempt + 1))
+                    break
+                else:
+                    time.sleep(2)
+            except Exception as e:
+                print(f"  [!] RSS 解析异常 r/{sub}: {str(e)[:80]}", file=sys.stderr)
+                time.sleep(2)
+    return []
 
+
+def _parse_rss_entries(root, limit, sub):
     ns = {"atom": "http://www.w3.org/2005/Atom"}
     posts = []
 
@@ -143,6 +162,7 @@ def fetch_subreddit_rss(sub: str, limit: int = 4):
         if len(posts) >= limit:
             break
 
+    print(f"  [✓] RSS 成功 r/{sub}: {len(posts)} 帖", file=sys.stderr)
     return posts
 
 

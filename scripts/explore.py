@@ -78,24 +78,42 @@ def get_json(url: str):
 
 def fetch_popular_rss(known_subs):
     subs_count = {}
-    try:
-        xml_text = http_get("https://www.reddit.com/r/popular/.rss?limit=100")
-        root = ET.fromstring(xml_text)
-        ns = {"atom": "http://www.w3.org/2005/Atom"}
-        for entry in root.findall("atom:entry", ns):
-            link_el = entry.find("atom:link", ns)
-            if link_el is None:
-                continue
-            href = link_el.get("href", "")
-            m = re.search(r"/r/([^/]+)/comments/", href)
-            if not m:
-                continue
-            sub = urllib.parse.unquote(m.group(1))
-            if sub.lower() in known_subs:
-                continue
-            subs_count[sub] = subs_count.get(sub, 0) + 1
-    except Exception as e:
-        print(f"[x] RSS 兜底也失败: {str(e)[:100]}", file=sys.stderr)
+    rss_urls = [
+        "https://www.reddit.com/r/popular/.rss?limit=100",
+        "https://old.reddit.com/r/popular/.rss?limit=100",
+    ]
+    for rss_url in rss_urls:
+        for attempt in range(RETRIES):
+            try:
+                xml_text = http_get(rss_url)
+                root = ET.fromstring(xml_text)
+                ns = {"atom": "http://www.w3.org/2005/Atom"}
+                for entry in root.findall("atom:entry", ns):
+                    link_el = entry.find("atom:link", ns)
+                    if link_el is None:
+                        continue
+                    href = link_el.get("href", "")
+                    m = re.search(r"/r/([^/]+)/comments/", href)
+                    if not m:
+                        continue
+                    sub = urllib.parse.unquote(m.group(1))
+                    if sub.lower() in known_subs:
+                        continue
+                    subs_count[sub] = subs_count.get(sub, 0) + 1
+                print(f"  [✓] RSS 探索成功: {len(subs_count)} 个候选", file=sys.stderr)
+                break
+            except urllib.error.HTTPError as e:
+                print(f"  [!] RSS 探索失败: HTTP {e.code} (attempt {attempt+1})", file=sys.stderr)
+                if e.code in (429, 503):
+                    time.sleep(3 * (attempt + 1))
+                elif e.code == 403:
+                    time.sleep(5 * (attempt + 1))
+                    break
+            except Exception as e:
+                print(f"  [!] RSS 探索异常: {str(e)[:80]}", file=sys.stderr)
+                time.sleep(2)
+        if subs_count:
+            break
 
     candidates = {}
     for sub, count in subs_count.items():
