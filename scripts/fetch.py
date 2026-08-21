@@ -16,6 +16,7 @@ import sys
 import time
 import urllib.request
 import urllib.error
+import urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 
@@ -117,9 +118,10 @@ def post_id_from_link(link: str) -> str:
 
 
 def fetch_subreddit_rss(sub: str, limit: int = 4):
+    sub_enc = urllib.parse.quote(sub)
     rss_urls = [
-        f"https://www.reddit.com/r/{sub}/hot/.rss?limit={limit * 2}",
-        f"https://old.reddit.com/r/{sub}/hot/.rss?limit={limit * 2}",
+        f"https://www.reddit.com/r/{sub_enc}/hot/.rss?limit={limit * 2}",
+        f"https://old.reddit.com/r/{sub_enc}/hot/.rss?limit={limit * 2}",
     ]
     for rss_url in rss_urls:
         for attempt in range(RETRIES):
@@ -192,8 +194,119 @@ def _parse_rss_entries(root, limit, sub):
     return posts
 
 
+def fetch_subreddit_html(sub: str, limit: int = 4):
+    sub_enc = urllib.parse.quote(sub)
+    urls = [
+        f"https://old.reddit.com/r/{sub_enc}/hot/.json?limit={limit * 2}",
+        f"https://www.reddit.com/r/{sub_enc}/top.json?t=day&limit={limit * 2}",
+    ]
+    for url in urls:
+        for attempt in range(2):
+            try:
+                data = json.loads(http_get(url))
+                children = data.get("data", {}).get("children", [])
+                if children:
+                    posts = []
+                    for c in children:
+                        d = c.get("data", {}) if isinstance(c, dict) else {}
+                        if d.get("stickied"):
+                            continue
+                        posts.append({
+                            "title": d.get("title", "").strip(),
+                            "score": d.get("score", 0),
+                            "comments": d.get("num_comments", 0),
+                            "link": "https://www.reddit.com" + d.get("permalink", ""),
+                            "created": d.get("created_utc", 0),
+                        })
+                        if len(posts) >= limit:
+                            break
+                    if posts:
+                        print(f"  [✓] 备用API成功 r/{sub}: {len(posts)} 帖", file=sys.stderr)
+                        return posts
+            except Exception as e:
+                print(f"  [!] 备用API失败 r/{sub}: {str(e)[:80]}", file=sys.stderr)
+                time.sleep(2)
+
+    html_urls = [
+        f"https://old.reddit.com/r/{sub_enc}/hot/",
+        f"https://old.reddit.com/r/{sub_enc}/",
+    ]
+    for html_url in html_urls:
+        try:
+            html = http_get(html_url)
+            posts = _parse_old_reddit_html(html, limit, sub)
+            if posts:
+                return posts
+        except Exception as e:
+            print(f"  [!] HTML 抓取失败 r/{sub}: {str(e)[:80]}", file=sys.stderr)
+            time.sleep(2)
+
+    return []
+
+
+def _parse_old_reddit_html(html: str, limit: int, sub: str):
+    posts = []
+    blocks = re.split(r'<div\s+class="thing\b[^"]*"', html)
+    if len(blocks) < 2:
+        return []
+
+    for block in blocks[1:]:
+        if len(posts) >= limit:
+            break
+
+        title = ""
+        href = ""
+        score = 0
+        comments = 0
+
+        title_m = re.search(
+            r'class="title[^"]*"[^>]*>\s*<a[^>]*href="([^"]*)"[^>]*>(.*?)</a>',
+            block, re.DOTALL
+        )
+        if title_m:
+            href = title_m.group(1)
+            title = re.sub(r'<[^>]+>', '', title_m.group(2)).strip()
+
+        score_m = re.search(r'class="score[^"]*"[^>]*>([\d,\.]+k?)', block)
+        if score_m:
+            try:
+                raw = score_m.group(1).replace(",", "")
+                if "k" in raw.lower():
+                    score = int(float(raw.replace("k", "")) * 1000)
+                else:
+                    score = int(float(raw))
+            except:
+                pass
+
+        cmt_m = re.search(r'class="comments[^"]*"[^>]*>([\d,\.]+)', block)
+        if cmt_m:
+            try:
+                raw = cmt_m.group(1).replace(",", "")
+                if "k" in raw.lower():
+                    comments = int(float(raw.replace("k", "")) * 1000)
+                else:
+                    comments = int(float(raw))
+            except:
+                pass
+
+        if title and ("promoted" not in block.lower()) and ("stickied" not in block.lower()):
+            link = href if href.startswith("http") else "https://www.reddit.com" + href
+            posts.append({
+                "title": title,
+                "score": score,
+                "comments": comments,
+                "link": link,
+                "created": 0,
+            })
+
+    if posts:
+        print(f"  [✓] HTML 抓取成功 r/{sub}: {len(posts)} 帖", file=sys.stderr)
+    return posts
+
+
 def fetch_subreddit(sub: str, limit: int = 4):
-    url = f"https://www.reddit.com/r/{sub}/hot.json?limit={limit * 2}&raw_json=1"
+    sub_enc = urllib.parse.quote(sub)
+    url = f"https://www.reddit.com/r/{sub_enc}/hot.json?limit={limit * 2}&raw_json=1"
     data = get_json(url)
 
     children = []
@@ -213,7 +326,13 @@ def fetch_subreddit(sub: str, limit: int = 4):
             print(f"  [!] JSON 结构异常，降级 RSS 抓取 r/{sub}", file=sys.stderr)
         else:
             print(f"  [!] JSON 返回空列表，降级 RSS 抓取 r/{sub}", file=sys.stderr)
-        return fetch_subreddit_rss(sub, limit)
+
+        rss_posts = fetch_subreddit_rss(sub, limit)
+        if rss_posts:
+            return rss_posts
+
+        print(f"  [!] RSS 也失败，尝试 HTML 兜底 r/{sub}", file=sys.stderr)
+        return fetch_subreddit_html(sub, limit)
 
     posts = []
     for c in children:
