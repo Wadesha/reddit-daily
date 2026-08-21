@@ -12,10 +12,13 @@ Reddit 版块探索器
 import json
 import os
 import random
+import re
 import sys
 import time
+import urllib.parse
 import urllib.request
 import urllib.error
+import xml.etree.ElementTree as ET
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SUBS_FILE = os.path.join(BASE_DIR, "scripts", "subreddits.json")
@@ -73,10 +76,40 @@ def get_json(url: str):
     raise RuntimeError(f"请求失败: {last_err}")
 
 
+def fetch_popular_rss(known_subs):
+    subs_count = {}
+    try:
+        xml_text = http_get("https://www.reddit.com/r/popular/.rss?limit=100")
+        root = ET.fromstring(xml_text)
+        ns = {"atom": "http://www.w3.org/2005/Atom"}
+        for entry in root.findall("atom:entry", ns):
+            link_el = entry.find("atom:link", ns)
+            if link_el is None:
+                continue
+            href = link_el.get("href", "")
+            m = re.search(r"/r/([^/]+)/comments/", href)
+            if not m:
+                continue
+            sub = urllib.parse.unquote(m.group(1))
+            if sub.lower() in known_subs:
+                continue
+            subs_count[sub] = subs_count.get(sub, 0) + 1
+    except Exception as e:
+        print(f"[x] RSS 兜底也失败: {str(e)[:100]}", file=sys.stderr)
+
+    candidates = {}
+    for sub, count in subs_count.items():
+        candidates[sub] = {
+            "name": sub,
+            "title": "",
+            "subscribers": count * 50000,
+        }
+    return candidates
+
+
 def main():
     keep = int(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1].isdigit() else 15
 
-    # 已收录版块（去重、小写）
     with open(SUBS_FILE, encoding="utf-8") as f:
         subs = json.load(f)
     known = set()
@@ -85,12 +118,13 @@ def main():
             name = s["name"] if isinstance(s, dict) else s
             known.add(name.lower())
 
-    # 抓热门版块榜单（两页）
     candidates = {}
+    json_ok = False
     for page in (None, "?after=t5_2qrbh"):
         try:
             url = "https://www.reddit.com/subreddits/popular.json?limit=100" + (page or "")
             data = get_json(url)
+            json_ok = True
             for c in data["data"]["children"]:
                 d = c["data"]
                 name = d.get("display_name", "")
@@ -102,10 +136,13 @@ def main():
                     "subscribers": d.get("subscribers", 0),
                 }
         except Exception as e:
-            print(f"[x] 榜单抓取失败: {str(e)[:100]}", file=sys.stderr)
+            print(f"[!] JSON 榜单抓取失败: {str(e)[:100]}", file=sys.stderr)
         time.sleep(1.0)
 
-    # 按订阅数排序取前 keep 个
+    if not json_ok:
+        print("[!] JSON API 全部被封，降级 RSS 发现热门版块", file=sys.stderr)
+        candidates = fetch_popular_rss(known)
+
     top = sorted(candidates.values(), key=lambda x: -x["subscribers"])[:keep]
     out = {"updated": time.strftime("%Y-%m-%d %H:%M"), "candidates": top}
     with open(EXPLORE_FILE, "w", encoding="utf-8") as f:
