@@ -20,6 +20,13 @@ import urllib.request
 import urllib.error
 import xml.etree.ElementTree as ET
 
+try:
+    import requests
+    HAS_REQUESTS = True
+except ImportError:
+    HAS_REQUESTS = False
+    requests = None
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SUBS_FILE = os.path.join(BASE_DIR, "scripts", "subreddits.json")
 EXPLORE_FILE = os.path.join(BASE_DIR, "scripts", "explore.json")
@@ -44,9 +51,23 @@ def _make_headers():
 
 
 def http_get(url: str) -> str:
-    req = urllib.request.Request(url, headers=_make_headers())
-    with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
-        return resp.read().decode("utf-8", errors="replace")
+    if HAS_REQUESTS:
+        try:
+            resp = requests.get(url, headers=_make_headers(), timeout=TIMEOUT)
+            resp.raise_for_status()
+            return resp.text
+        except requests.exceptions.HTTPError as e:
+            raise urllib.error.HTTPError(
+                url, e.response.status_code, str(e),
+                e.response.headers if e.response else None,
+                None
+            ) from None
+        except requests.exceptions.RequestException as e:
+            raise Exception(str(e)[:200]) from None
+    else:
+        req = urllib.request.Request(url, headers=_make_headers())
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
+            return resp.read().decode("utf-8", errors="replace")
 
 
 def _reddit_urls(url: str):
