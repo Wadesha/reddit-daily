@@ -1,0 +1,209 @@
+{
+  "categories": [
+    {
+      "id": "fin",
+      "cn": "💰 金融投资",
+      "en": "investing · wallstreetbets · stocks · Bitcoin · CryptoCurrency · RealEstate · personalfinance",
+      "subs": [
+        {"name": "investing", "limit": 4, "comments": false},
+        {"name": "wallstreetbets", "limit": 4, "comments": true, "comments_count": 5},
+        {"name": "stocks", "limit": 4, "comments": false},
+        {"name": "Bitcoin", "limit": 4, "comments": true, "comments_count": 5},
+        {"name": "CryptoCurrency", "limit": 4, "comments": false},
+        {"name": "RealEstate", "limit": 3, "comments": false},
+        {"name": "personalfinance", "limit": 3, "comments": true, "comments_count": 3}
+      ]
+    },
+    {
+      "id": "tech",
+      "cn": "🔬 科技与AI",
+      "en": "technology · programming · MachineLearning · artificial · netsec · gadgets · Python · webdev · buildapc · rust · devops · datascience · gamedev · selfhosted · linux · opensource · apple · science · space",
+      "subs": [
+        {"name": "technology", "limit": 5, "comments": true, "comments_count": 5},
+        {"name": "programming", "limit": 4, "comments": true, "comments_count": 3},
+        {"name": "MachineLearning", "limit": 3, "comments": false},
+        {"name": "artificial", "limit": 3, "comments": false},
+        {"name": "netsec", "limit": 3, "comments": false},
+        {"name": "gadgets", "limit": 3, "comments": false},
+        {"name": "Python", "limit": 3, "comments": false},
+        {"name": "webdev", "limit": 3, "comments": false},
+        {"name": "buildapc", "limit": 3, "comments": false},
+        {"name": "rust", "limit": 3, "comments": false},
+        {"name": "devops", "limit": 3, "comments": false},
+        {"name": "datascience", "limit": 3, "comments": false},
+        {"name": "gamedev", "limit": 3, "comments": false},
+        {"name": "selfhosted", "limit": 3, "comments": false},
+        {"name": "linux", "limit": 3, "comments": false},
+        {"name": "opensource", "limit": 3, "comments": false},
+        {"name": "apple", "limit": 3, "comments": false},
+        {"name": "science", "limit": 3, "comments": false},
+        {"name": "space", "limit": 3, "comments": false}
+      ]
+    },
+    {
+      "id": "ent",
+      "cn": "🎬 影视娱乐与游戏",
+      "en": "movies · television · anime · gaming · pcmasterrace · NintendoSwitch · music · funny · memes · ProgrammerHumor · TrueFilm · writing",
+      "subs": [
+        {"name": "movies", "limit": 4, "comments": true, "comments_count": 5},
+        {"name": "television", "limit": 3, "comments": false},
+        {"name": "anime", "limit": 3, "comments": false},
+        {"name": "gaming", "limit": 4, "comments": true, "comments_count": 5},
+        {"name": "pcmasterrace", "limit": 3, "comments": false},
+        {"name": "NintendoSwitch", "limit": 3, "comments": false},
+        {"name": "music", "limit": 3, "comments": false},
+        {"name": "funny", "limit": 3, "comments": false},
+        {"name": "memes", "limit": 4, "comments": true, "comments_count": 3},
+        {"name": "ProgrammerHumor", "limit": 3, "comments": false},
+        {"name": "TrueFilm", "limit": 3, "comments": false},
+        {"name": "writing", "limit": 3, "comments": false}
+      ]
+    },
+    {
+      "id": "sport",
+      "cn": "⚽ 体育",
+      "en": "sports · soccer · nba · formula1 · running",
+      "subs": [
+        {"name": "sports", "limit": 3, "comments": false},
+        {"name": "soccer", "limit": 4, "comments": true, "comments_count": 3},
+        {"name": "nba", "limit": 4, "comments": true, "comments_count": 5},
+        {"name": "formula1", "limit": 4, "comments": true, "comments_count": 5},
+        {"name": "running", "limit": 2, "comments": false}
+      ]
+    },
+    {
+      "id": "food",
+      "cn": "🍜 饮食与生活",
+      "en": "food · cooking · Baking · Coffee · tea · whiskey · travel · lifehacks",
+      "subs": [
+        {"name": "food", "limit": 4, "comments": true, "comments_count": 3},
+        {"name": "cooking", "limit": 4, "comments": true, "comments_count": 5},
+        {"name": "Baking", "limit": 3, "comments": false},
+        {"name": "Coffee", "limit": 3, "comments": false},
+        {"name": "tea", "limit": 3, "comments": false},
+        {"name": "whiskey", "limit": 3, "comments": false},
+        {"name": "travel", "limit": 3, "comments": false},
+        {"name": "lifehacks", "limit": 3, "comments": true, "comments_count": 3}
+      ]
+    },
+    {
+      "id": "home",
+      "cn": "🏠 家居园艺与宠物",
+      "en": "DIY · HomeImprovement · woodworking · gardening · houseplants · minimalism · cats · dogs · aww",
+      "subs": [
+        {"name": "DIY", "limit": 3, "comments": false},
+        {"name": "HomeImprovement", "limit": 3, "comments": false},
+        {"name": "woodworking", "limit": 4, "comments": true, "comments_count": 5},
+        {"name": "gardening", "limit": 4, "comments": true, "comments_count": 3},
+        {"name": "houseplants", "limit": 3, "comments": false},
+        {"name": "minimalism", "limit": 3, "comments": false},
+        {"name": "cats", "limit": 3, "comments": true, "comments_count": 3},
+        {"name": "dogs", "limit": 3, "comments": false},
+        {"name": "aww", "limit": 3, "comments": false}
+      ]
+    },
+    {
+      "id": "money",
+      "cn": "💼 职场与法律",
+      "en": "jobs · cscareerquestions · ExperiencedDevs · careerguidance · antiwork · Teachers · legaladvice · legaladviceUK · LegalAdviceEurope · AskALawyer · fitness · ApplyingToCollege",
+      "subs": [
+        {"name": "jobs", "limit": 3, "comments": false},
+        {"name": "cscareerquestions", "limit": 4, "comments": true, "comments_count": 5},
+        {"name": "ExperiencedDevs", "limit": 3, "comments": false},
+        {"name": "careerguidance", "limit": 3, "comments": false},
+        {"name": "antiwork", "limit": 4, "comments": true, "comments_count": 3},
+        {"name": "Teachers", "limit": 3, "comments": false},
+        {"name": "legaladvice", "limit": 4, "comments": true, "comments_count": 5},
+        {"name": "legaladviceUK", "limit": 3, "comments": false},
+        {"name": "LegalAdviceEurope", "limit": 2, "comments": false},
+        {"name": "AskALawyer", "limit": 3, "comments": false},
+        {"name": "fitness", "limit": 2, "comments": false},
+        {"name": "ApplyingToCollege", "limit": 3, "comments": false}
+      ]
+    },
+    {
+      "id": "know",
+      "cn": "📚 知识科普",
+      "en": "todayilearned · books · history · explainlikeimfive · math · chess · boardgames",
+      "subs": [
+        {"name": "todayilearned", "limit": 4, "comments": true, "comments_count": 5},
+        {"name": "books", "limit": 3, "comments": false},
+        {"name": "history", "limit": 3, "comments": false},
+        {"name": "explainlikeimfive", "limit": 4, "comments": true, "comments_count": 5},
+        {"name": "math", "limit": 3, "comments": false},
+        {"name": "chess", "limit": 3, "comments": false},
+        {"name": "boardgames", "limit": 3, "comments": false}
+      ]
+    },
+    {
+      "id": "health",
+      "cn": "🩺 健康与心理",
+      "en": "AskDocs · psychology · parenting · TrueOffMyChest",
+      "subs": [
+        {"name": "AskDocs", "limit": 3, "comments": true, "comments_count": 3},
+        {"name": "psychology", "limit": 3, "comments": false},
+        {"name": "parenting", "limit": 3, "comments": false},
+        {"name": "TrueOffMyChest", "limit": 4, "comments": true, "comments_count": 3}
+      ]
+    },
+    {
+      "id": "chat",
+      "cn": "💬 问答闲聊",
+      "en": "AskReddit · interestingasfuck",
+      "subs": [
+        {"name": "AskReddit", "limit": 5, "comments": true, "comments_count": 5},
+        {"name": "interestingasfuck", "limit": 4, "comments": false}
+      ]
+    },
+    {
+      "id": "hobby",
+      "cn": "🔧 兴趣与出行",
+      "en": "photography · cars · electricvehicles · aviation · trains · CampingandHiking · 3Dprinting · mechanicalkeyboards · Watches",
+      "subs": [
+        {"name": "photography", "limit": 3, "comments": false},
+        {"name": "cars", "limit": 3, "comments": false},
+        {"name": "electricvehicles", "limit": 3, "comments": false},
+        {"name": "aviation", "limit": 3, "comments": false},
+        {"name": "trains", "limit": 3, "comments": true, "comments_count": 3},
+        {"name": "CampingandHiking", "limit": 3, "comments": false},
+        {"name": "3Dprinting", "limit": 3, "comments": false},
+        {"name": "mechanicalkeyboards", "limit": 3, "comments": false},
+        {"name": "Watches", "limit": 3, "comments": false}
+      ]
+    },
+    {
+      "id": "countries",
+      "cn": "🌍 各国社区",
+      "en": "germany · japanlife · AskUK · AskEurope · AskAnAmerican · canada · singapore",
+      "subs": [
+        {"name": "germany", "limit": 3, "comments": false},
+        {"name": "japanlife", "limit": 3, "comments": false},
+        {"name": "AskUK", "limit": 4, "comments": true, "comments_count": 5},
+        {"name": "AskEurope", "limit": 3, "comments": false},
+        {"name": "AskAnAmerican", "limit": 3, "comments": false},
+        {"name": "canada", "limit": 3, "comments": false},
+        {"name": "singapore", "limit": 3, "comments": false}
+      ]
+    },
+    {
+      "id": "cn",
+      "cn": "🇨🇳 中文社区",
+      "en": "China_irl · ChineseLanguage",
+      "subs": [
+        {"name": "China_irl", "limit": 4, "comments": true, "comments_count": 3},
+        {"name": "ChineseLanguage", "limit": 3, "comments": false}
+      ]
+    },
+    {
+      "id": "news",
+      "cn": "📰 新闻时政",
+      "en": "worldnews · politics · economics · business",
+      "subs": [
+        {"name": "worldnews", "limit": 4, "comments": true, "comments_count": 3},
+        {"name": "politics", "limit": 3, "comments": false},
+        {"name": "economics", "limit": 3, "comments": false},
+        {"name": "business", "limit": 3, "comments": false}
+      ]
+    }
+  ]
+}
