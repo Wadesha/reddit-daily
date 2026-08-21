@@ -43,20 +43,76 @@ UA_LIST = [
 TIMEOUT = 20
 RETRIES = 3
 JSON_AVAILABLE = True
+OAUTH_TOKEN = None
+OAUTH_TOKEN_EXPIRES = 0
 
 
-def _make_headers():
-    return {
+def _get_oauth_token():
+    global OAUTH_TOKEN, OAUTH_TOKEN_EXPIRES
+    now = time.time()
+    if OAUTH_TOKEN and now < OAUTH_TOKEN_EXPIRES:
+        return OAUTH_TOKEN
+
+    client_id = os.environ.get("REDDIT_CLIENT_ID", "").strip()
+    client_secret = os.environ.get("REDDIT_CLIENT_SECRET", "").strip()
+    if not client_id or not client_secret:
+        return None
+
+    try:
+        if HAS_REQUESTS:
+            resp = requests.post(
+                "https://www.reddit.com/api/v1/access_token",
+                auth=(client_id, client_secret),
+                data={"grant_type": "client_credentials"},
+                headers={"User-Agent": "reddit-daily-digest/1.0"},
+                timeout=TIMEOUT,
+            )
+            resp.raise_for_status()
+            token_data = resp.json()
+        else:
+            cred = urllib.parse.quote(f"{client_id}:{client_secret}", safe="")
+            req = urllib.request.Request(
+                "https://www.reddit.com/api/v1/access_token",
+                data=urllib.parse.urlencode({"grant_type": "client_credentials"}).encode(),
+                headers={
+                    "Authorization": f"Basic {cred}",
+                    "User-Agent": "reddit-daily-digest/1.0",
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+            )
+            with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
+                token_data = json.loads(resp.read())
+
+        OAUTH_TOKEN = token_data.get("access_token", "")
+        expires_in = token_data.get("expires_in", 3600)
+        OAUTH_TOKEN_EXPIRES = now + expires_in - 60
+        if OAUTH_TOKEN:
+            print("[✓] Reddit OAuth 认证成功", file=sys.stderr)
+        return OAUTH_TOKEN
+    except Exception as e:
+        print(f"[!] Reddit OAuth 失败: {str(e)[:100]}", file=sys.stderr)
+        OAUTH_TOKEN = None
+        OAUTH_TOKEN_EXPIRES = 0
+        return None
+
+
+def _make_headers(use_auth=False):
+    headers = {
         "User-Agent": random.choice(UA_LIST),
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,application/json;q=0.8,*/*;q=0.7",
         "Accept-Language": "en-US,en;q=0.9",
     }
+    if use_auth:
+        token = _get_oauth_token()
+        if token:
+            headers["Authorization"] = f"Bearer {token}"
+    return headers
 
 
-def http_get(url: str) -> str:
+def http_get(url: str, use_auth=False) -> str:
     if HAS_REQUESTS:
         try:
-            resp = requests.get(url, headers=_make_headers(), timeout=TIMEOUT)
+            resp = requests.get(url, headers=_make_headers(use_auth=use_auth), timeout=TIMEOUT)
             resp.raise_for_status()
             return resp.text
         except requests.exceptions.HTTPError as e:
@@ -68,7 +124,7 @@ def http_get(url: str) -> str:
         except requests.exceptions.RequestException as e:
             raise Exception(str(e)[:200]) from None
     else:
-        req = urllib.request.Request(url, headers=_make_headers())
+        req = urllib.request.Request(url, headers=_make_headers(use_auth=use_auth))
         with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
             return resp.read().decode("utf-8", errors="replace")
 
@@ -82,27 +138,35 @@ def _reddit_urls(url: str):
 def get_json(url: str):
     global JSON_AVAILABLE
     last_err = None
+    has_oauth = bool(_get_oauth_token())
+
     for domain_url in _reddit_urls(url):
-        for attempt in range(RETRIES):
-            try:
-                raw = http_get(domain_url)
-                data = json.loads(raw)
-                return data
-            except urllib.error.HTTPError as e:
-                last_err = f"HTTP {e.code}"
-                if e.code in (429, 503):
-                    delay = 6 * (2 ** attempt) + random.uniform(0, 2)
-                    time.sleep(delay)
-                elif e.code == 403:
-                    delay = 10 * (attempt + 1) + random.uniform(0, 3)
-                    time.sleep(delay)
-                    break
-            except json.JSONDecodeError as e:
-                last_err = f"JSON 解析失败: {str(e)[:80]}"
-                time.sleep(3)
-            except Exception as e:
-                last_err = str(e)[:120]
-                time.sleep(3)
+        for use_auth in ([True, False] if has_oauth else [False]):
+            for attempt in range(RETRIES):
+                try:
+                    raw = http_get(domain_url, use_auth=use_auth)
+                    data = json.loads(raw)
+                    return data
+                except urllib.error.HTTPError as e:
+                    last_err = f"HTTP {e.code}"
+                    if e.code in (429, 503):
+                        delay = 6 * (2 ** attempt) + random.uniform(0, 2)
+                        time.sleep(delay)
+                    elif e.code == 403:
+                        if use_auth:
+                            print(f"  [!] OAuth 认证请求被拒，尝试无认证", file=sys.stderr)
+                            break
+                        delay = 10 * (attempt + 1) + random.uniform(0, 3)
+                        time.sleep(delay)
+                        break
+                    else:
+                        break
+                except json.JSONDecodeError as e:
+                    last_err = f"JSON 解析失败: {str(e)[:80]}"
+                    time.sleep(3)
+                except Exception as e:
+                    last_err = str(e)[:120]
+                    time.sleep(3)
     JSON_AVAILABLE = False
     print(f"  [x] 请求失败 {url[:80]}: {last_err}", file=sys.stderr)
     return None

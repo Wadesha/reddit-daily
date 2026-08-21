@@ -32,13 +32,17 @@ jobs:
         run: python scripts/explore.py 15
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
 
       - name: Fetch & generate
         run: python scripts/fetch.py
         env:
-          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}        # 可选：配置后标题自动翻译中文
-          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}      # 可选：默认 DeepSeek
-          LLM_MODEL: ${{ secrets.LLM_MODEL }}            # 可选：默认 deepseek-chat
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
 
       - name: Commit & push
         run: |
