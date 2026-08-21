@@ -10,10 +10,13 @@ Reddit 每日速览生成器（支持评论 + 动态调节 + 探索推荐 + 历�
 """
 import json
 import os
+import random
+import re
 import sys
 import time
 import urllib.request
 import urllib.error
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,29 +25,58 @@ EXPLORE_FILE = os.path.join(BASE_DIR, "scripts", "explore.json")
 OUT_FILE = os.path.join(BASE_DIR, "index.html")
 CST = timezone(timedelta(hours=8))
 
-UA = "reddit-daily-digest/1.0 (personal non-commercial use)"
+UA_LIST = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15",
+]
 TIMEOUT = 20
-RETRIES = 2
+RETRIES = 3
+JSON_AVAILABLE = True
+
+
+def _make_headers():
+    return {
+        "User-Agent": random.choice(UA_LIST),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,application/json;q=0.8,*/*;q=0.7",
+        "Accept-Language": "en-US,en;q=0.9",
+    }
 
 
 def http_get(url: str) -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
+    req = urllib.request.Request(url, headers=_make_headers())
     with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
         return resp.read().decode("utf-8", errors="replace")
 
 
+def _reddit_urls(url: str):
+    yield url
+    if "www.reddit.com" in url:
+        yield url.replace("www.reddit.com", "old.reddit.com")
+
+
 def get_json(url: str):
+    global JSON_AVAILABLE
     last_err = None
-    for attempt in range(RETRIES):
-        try:
-            return json.loads(http_get(url))
-        except urllib.error.HTTPError as e:
-            last_err = f"HTTP {e.code}"
-            if e.code in (429, 403, 503):
-                time.sleep(6 * (attempt + 1))
-        except Exception as e:
-            last_err = str(e)[:120]
-            time.sleep(3)
+    for domain_url in _reddit_urls(url):
+        for attempt in range(RETRIES):
+            try:
+                return json.loads(http_get(domain_url))
+            except urllib.error.HTTPError as e:
+                last_err = f"HTTP {e.code}"
+                if e.code in (429, 503):
+                    delay = 6 * (2 ** attempt) + random.uniform(0, 2)
+                    time.sleep(delay)
+                elif e.code == 403:
+                    delay = 10 * (attempt + 1) + random.uniform(0, 3)
+                    time.sleep(delay)
+                    break
+            except Exception as e:
+                last_err = str(e)[:120]
+                time.sleep(3)
+    JSON_AVAILABLE = False
     print(f"  [x] 请求失败 {url[:80]}: {last_err}", file=sys.stderr)
     return None
 
@@ -58,11 +90,68 @@ def post_id_from_link(link: str) -> str:
         return ""
 
 
+def fetch_subreddit_rss(sub: str, limit: int = 4):
+    url = f"https://www.reddit.com/r/{sub}/hot/.rss?limit={limit * 2}"
+    try:
+        xml_text = http_get(url)
+        root = ET.fromstring(xml_text)
+    except Exception:
+        return []
+
+    ns = {"atom": "http://www.w3.org/2005/Atom"}
+    posts = []
+
+    for entry in root.findall("atom:entry", ns):
+        title_el = entry.find("atom:title", ns)
+        title = title_el.text.strip() if title_el is not None and title_el.text else ""
+
+        link_el = entry.find("atom:link", ns)
+        link = link_el.get("href", "") if link_el is not None else ""
+
+        updated_el = entry.find("atom:updated", ns)
+        created_utc = 0
+        if updated_el is not None and updated_el.text:
+            try:
+                dt = datetime.fromisoformat(updated_el.text.replace("Z", "+00:00"))
+                created_utc = dt.timestamp()
+            except ValueError:
+                pass
+
+        content_el = entry.find("atom:content", ns)
+        content_html = content_el.text if content_el is not None and content_el.text else ""
+
+        score = 0
+        m = re.search(r'(\d[\d,]*)\s*point', content_html)
+        if m:
+            score = int(m.group(1).replace(",", ""))
+
+        comments = 0
+        cm = re.search(r'(\d[\d,]*)\s*(?:comments|comment)', content_html)
+        if cm:
+            comments = int(cm.group(1).replace(",", ""))
+
+        if not title:
+            continue
+
+        posts.append({
+            "title": title,
+            "score": score,
+            "comments": comments,
+            "link": link,
+            "created": created_utc,
+        })
+        if len(posts) >= limit:
+            break
+
+    return posts
+
+
 def fetch_subreddit(sub: str, limit: int = 4):
     url = f"https://www.reddit.com/r/{sub}/hot.json?limit={limit * 2}&raw_json=1"
     data = get_json(url)
     if not data:
-        return []
+        print(f"  [!] JSON API 不可用，降级 RSS 抓取 r/{sub}", file=sys.stderr)
+        return fetch_subreddit_rss(sub, limit)
     posts = []
     for c in data["data"]["children"]:
         d = c["data"]
@@ -81,6 +170,8 @@ def fetch_subreddit(sub: str, limit: int = 4):
 
 
 def fetch_comments(post_id: str, limit: int = 5):
+    if not JSON_AVAILABLE:
+        return []
     url = f"https://www.reddit.com/comments/{post_id}.json?limit=100&sort=top&depth=1&raw_json=1"
     data = get_json(url)
     if not data or len(data) < 2:
