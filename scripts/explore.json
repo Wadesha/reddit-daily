@@ -1,4 +1,80 @@
 {
-  "updated": "2026-08-24 00:38",
-  "candidates": []
+  "updated": "2026-08-25 00:37",
+  "candidates": [
+    {
+      "name": "mildlyinfuriating",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "TikTokCringe",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "texts",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "meirl",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "MadeMeSmile",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "GirlDinnerDiaries",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "mildlyinteresting",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "PoursTea",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "TopCharacterTropes",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "news",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "shittymoviedetails",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "SipsTea",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "whatisit",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "MoralityScaling",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "UpliftingNews",
+      "title": "",
+      "subscribers": 50000
+    }
+  ]
 }
