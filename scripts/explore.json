@@ -1,28 +1,8 @@
 {
-  "updated": "2026-08-25 00:37",
+  "updated": "2026-08-26 00:38",
   "candidates": [
     {
-      "name": "mildlyinfuriating",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "TikTokCringe",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "texts",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "meirl",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "MadeMeSmile",
+      "name": "news",
       "title": "",
       "subscribers": 100000
     },
@@ -32,27 +12,27 @@
       "subscribers": 100000
     },
     {
-      "name": "mildlyinteresting",
+      "name": "OldSchoolCool",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "PoursTea",
+      "name": "mildlyinfuriating",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "TopCharacterTropes",
+      "name": "nextfuckinglevel",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "news",
+      "name": "antiai",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "shittymoviedetails",
+      "name": "Wellthatsucks",
       "title": "",
       "subscribers": 100000
     },
@@ -62,17 +42,37 @@
       "subscribers": 50000
     },
     {
-      "name": "whatisit",
+      "name": "PickAorB",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "MoralityScaling",
+      "name": "Eminem",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "UpliftingNews",
+      "name": "BeAmazed",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "GuysBeingDudes",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "pics",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "popculturechat",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "TopCharacterTropes",
       "title": "",
       "subscribers": 50000
     }
