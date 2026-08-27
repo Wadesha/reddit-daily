@@ -1,78 +1,78 @@
 {
-  "updated": "2026-08-26 00:38",
+  "updated": "2026-08-27 05:36",
   "candidates": [
+    {
+      "name": "interesting",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "MadeMeSmile",
+      "title": "",
+      "subscribers": 100000
+    },
     {
       "name": "news",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "GirlDinnerDiaries",
+      "name": "nottheonion",
       "title": "",
       "subscribers": 100000
-    },
-    {
-      "name": "OldSchoolCool",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "mildlyinfuriating",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "nextfuckinglevel",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "antiai",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "Wellthatsucks",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "SipsTea",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "PickAorB",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "Eminem",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "BeAmazed",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "GuysBeingDudes",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "pics",
-      "title": "",
-      "subscribers": 50000
     },
     {
       "name": "popculturechat",
       "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "PoursTea",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "law",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Millennials",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "videos",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "lovethissmug",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "mildlyinteresting",
+      "title": "",
       "subscribers": 50000
     },
     {
-      "name": "TopCharacterTropes",
+      "name": "NatureIsFuckingLit",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "GTA6",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "bald",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "MoralityScaling",
       "title": "",
       "subscribers": 50000
     }
