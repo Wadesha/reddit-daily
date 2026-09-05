@@ -1,4 +1,80 @@
 {
-  "updated": "2026-09-04 01:52",
-  "candidates": []
+  "updated": "2026-09-05 01:52",
+  "candidates": [
+    {
+      "name": "SipsTea",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "mildlyinfuriating",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "meirl",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Millennials",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "whatisit",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "okbuddycinephile",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "mildlyinteresting",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "TopCharacterTropes",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "horror",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Whatcouldgowrong",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "MadeMeSmile",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "MurderedByWords",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "interesting",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "whoathatsinteresting",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "law",
+      "title": "",
+      "subscribers": 50000
+    }
+  ]
 }
