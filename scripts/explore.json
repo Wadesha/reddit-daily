@@ -1,43 +1,23 @@
 {
-  "updated": "2026-09-09 02:00",
+  "updated": "2026-09-10 01:57",
   "candidates": [
-    {
-      "name": "PoursTea",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "Damnthatsinteresting",
-      "title": "",
-      "subscribers": 100000
-    },
     {
       "name": "SipsTea",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 150000
     },
     {
-      "name": "interesting",
+      "name": "MadeMeSmile",
       "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "meirl",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "comics",
-      "title": "",
-      "subscribers": 100000
+      "subscribers": 150000
     },
     {
       "name": "mildlyinfuriating",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 150000
     },
     {
-      "name": "TopCharacterTropes",
+      "name": "meirl",
       "title": "",
       "subscribers": 100000
     },
@@ -47,24 +27,14 @@
       "subscribers": 100000
     },
     {
-      "name": "nextfuckinglevel",
+      "name": "marvelrivals",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "LeopardsAteMyFarm",
+      "name": "BrandNewSentence",
       "title": "",
       "subscribers": 100000
-    },
-    {
-      "name": "bald",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "MaliciousCompliance",
-      "title": "",
-      "subscribers": 50000
     },
     {
       "name": "law",
@@ -72,7 +42,37 @@
       "subscribers": 50000
     },
     {
-      "name": "LoveTrash",
+      "name": "MoralityScaling",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "AmIOverreacting",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "iphone",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "pics",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "UpliftingNews",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "WhatIsTheTea",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "ichichs",
       "title": "",
       "subscribers": 50000
     }
