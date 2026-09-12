@@ -1,18 +1,38 @@
 {
-  "updated": "2026-09-11 01:56",
+  "updated": "2026-09-12 02:01",
   "candidates": [
     {
-      "name": "SipsTea",
+      "name": "PoursTea",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "okbuddycinephile",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "mildlyinteresting",
+      "name": "pics",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "anticapitalism",
+      "name": "meirl",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "MaliciousCompliance",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "MadeMeSmile",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Awww",
       "title": "",
       "subscribers": 100000
     },
@@ -22,37 +42,22 @@
       "subscribers": 100000
     },
     {
-      "name": "HistoryMemes",
+      "name": "SipsTea",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "news",
+      "name": "FavoriteCharacter",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 50000
     },
     {
-      "name": "GirlDinnerDiaries",
+      "name": "BlackPeopleofReddit",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 50000
     },
     {
-      "name": "AdviceAnimals",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "comics",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "NFLv2",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "MoralityScaling",
+      "name": "videogames",
       "title": "",
       "subscribers": 50000
     },
@@ -62,17 +67,12 @@
       "subscribers": 50000
     },
     {
-      "name": "pics",
+      "name": "me_irl",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "DoomerCircleJerk",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "videos",
+      "name": "mildlyinteresting",
       "title": "",
       "subscribers": 50000
     }
