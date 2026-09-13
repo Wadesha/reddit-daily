@@ -1,38 +1,23 @@
 {
-  "updated": "2026-09-12 02:01",
+  "updated": "2026-09-13 01:55",
   "candidates": [
     {
       "name": "PoursTea",
       "title": "",
-      "subscribers": 150000
+      "subscribers": 100000
     },
     {
-      "name": "okbuddycinephile",
+      "name": "CFB",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "pics",
+      "name": "popculturechat",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "meirl",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "MaliciousCompliance",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "MadeMeSmile",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "Awww",
+      "name": "classicwow",
       "title": "",
       "subscribers": 100000
     },
@@ -42,37 +27,52 @@
       "subscribers": 100000
     },
     {
-      "name": "SipsTea",
+      "name": "GuysBeingDudes",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "FavoriteCharacter",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "BlackPeopleofReddit",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
       "name": "videogames",
       "title": "",
-      "subscribers": 50000
+      "subscribers": 100000
     },
     {
-      "name": "WhatIsTheTea",
+      "name": "PeterExplainsTheJoke",
       "title": "",
-      "subscribers": 50000
+      "subscribers": 100000
     },
     {
-      "name": "me_irl",
+      "name": "antimeme",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "MadeMeSmile",
       "title": "",
       "subscribers": 50000
     },
     {
       "name": "mildlyinteresting",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "meirl",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "bald",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "Genshin_Impact_Leaks",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "Anticonsumption",
       "title": "",
       "subscribers": 50000
     }
