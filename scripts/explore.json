@@ -1,4 +1,80 @@
 {
-  "updated": "2026-09-14 02:13",
-  "candidates": []
+  "updated": "2026-09-15 02:19",
+  "candidates": [
+    {
+      "name": "meirl",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Fauxmoi",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "nextfuckinglevel",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "PoursTea",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "news",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "GirlDinnerDiaries",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "okbuddycinephile",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "videos",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "clevercomebacks",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "pics",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "LoveTrash",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "popculturechat",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "WhatIsTheTea",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "AmItheAsshole",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "law",
+      "title": "",
+      "subscribers": 50000
+    }
+  ]
 }
