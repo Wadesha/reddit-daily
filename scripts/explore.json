@@ -1,8 +1,18 @@
 {
-  "updated": "2026-09-15 02:19",
+  "updated": "2026-09-16 02:12",
   "candidates": [
     {
-      "name": "meirl",
+      "name": "SipsTea",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "WhatIsTheTea",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "popculturechat",
       "title": "",
       "subscribers": 100000
     },
@@ -12,67 +22,57 @@
       "subscribers": 100000
     },
     {
-      "name": "nextfuckinglevel",
+      "name": "PoursTea",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "PoursTea",
+      "name": "mildlyinfuriating",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "TopCharacterTropes",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "MadeMeSmile",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "PeterExplainsTheJoke",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "comics",
       "title": "",
       "subscribers": 100000
     },
     {
       "name": "news",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 50000
     },
     {
-      "name": "GirlDinnerDiaries",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "okbuddycinephile",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "videos",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "clevercomebacks",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "pics",
+      "name": "MoralityScaling",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "LoveTrash",
+      "name": "funComunitty",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "popculturechat",
+      "name": "meirl",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "WhatIsTheTea",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "AmItheAsshole",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "law",
+      "name": "nottheonion",
       "title": "",
       "subscribers": 50000
     }
