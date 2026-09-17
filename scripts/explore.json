@@ -1,23 +1,23 @@
 {
-  "updated": "2026-09-16 02:12",
+  "updated": "2026-09-17 02:16",
   "candidates": [
     {
-      "name": "SipsTea",
+      "name": "mildlyinfuriating",
       "title": "",
       "subscribers": 150000
     },
     {
-      "name": "WhatIsTheTea",
+      "name": "comics",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "popculturechat",
+      "name": "dashcams",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "Fauxmoi",
+      "name": "BoyDinnerDiaries",
       "title": "",
       "subscribers": 100000
     },
@@ -27,29 +27,19 @@
       "subscribers": 100000
     },
     {
-      "name": "mildlyinfuriating",
+      "name": "Fauxmoi",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "TopCharacterTropes",
+      "name": "Millennials",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "MadeMeSmile",
+      "name": "videogames",
       "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "PeterExplainsTheJoke",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "comics",
-      "title": "",
-      "subscribers": 100000
+      "subscribers": 50000
     },
     {
       "name": "news",
@@ -57,22 +47,32 @@
       "subscribers": 50000
     },
     {
-      "name": "MoralityScaling",
+      "name": "popculturechat",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "funComunitty",
+      "name": "DangerousNightsCrew",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "vinyl",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "LivestreamFail",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "GirlDinnerDiaries",
       "title": "",
       "subscribers": 50000
     },
     {
       "name": "meirl",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "nottheonion",
       "title": "",
       "subscribers": 50000
     }
