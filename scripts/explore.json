@@ -1,28 +1,43 @@
 {
-  "updated": "2026-09-17 02:16",
+  "updated": "2026-09-18 02:02",
   "candidates": [
+    {
+      "name": "interesting",
+      "title": "",
+      "subscribers": 150000
+    },
     {
       "name": "mildlyinfuriating",
       "title": "",
       "subscribers": 150000
     },
     {
-      "name": "comics",
+      "name": "okbuddycinephile",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "TikTokCringe",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "SipsTea",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "meirl",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "dashcams",
+      "name": "MadeMeSmile",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "BoyDinnerDiaries",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "PoursTea",
+      "name": "nextfuckinglevel",
       "title": "",
       "subscribers": 100000
     },
@@ -32,47 +47,32 @@
       "subscribers": 100000
     },
     {
-      "name": "Millennials",
+      "name": "pics",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "videogames",
+      "name": "Damnthatsinteresting",
       "title": "",
-      "subscribers": 50000
+      "subscribers": 100000
+    },
+    {
+      "name": "PoursTea",
+      "title": "",
+      "subscribers": 100000
     },
     {
       "name": "news",
       "title": "",
-      "subscribers": 50000
+      "subscribers": 100000
     },
     {
-      "name": "popculturechat",
+      "name": "whoathatsinteresting",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "DangerousNightsCrew",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "vinyl",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "LivestreamFail",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "GirlDinnerDiaries",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "meirl",
+      "name": "whatisit",
       "title": "",
       "subscribers": 50000
     }
