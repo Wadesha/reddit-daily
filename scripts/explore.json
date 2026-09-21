@@ -1,18 +1,13 @@
 {
-  "updated": "2026-09-20 02:12",
+  "updated": "2026-09-21 02:12",
   "candidates": [
     {
-      "name": "meirl",
+      "name": "MoralityScaling",
       "title": "",
       "subscribers": 150000
     },
     {
-      "name": "mildlyinfuriating",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "mildlyinteresting",
+      "name": "PoursTea",
       "title": "",
       "subscribers": 100000
     },
@@ -22,32 +17,32 @@
       "subscribers": 100000
     },
     {
+      "name": "mildlyinfuriating",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "clevercomebacks",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "WorkReform",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
       "name": "nextfuckinglevel",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "LeopardsAteMyFarm",
+      "name": "BlackPeopleTwitter",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 50000
     },
     {
-      "name": "TopCharacterTropes",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "whatisit",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "PoursTea",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "KidsAreFuckingStupid",
+      "name": "MurderedByWords",
       "title": "",
       "subscribers": 50000
     },
@@ -57,22 +52,27 @@
       "subscribers": 50000
     },
     {
+      "name": "hatethissmug",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "OldSchoolCool",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
       "name": "oddlysatisfying",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "AmericansInCanada",
+      "name": "pics",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "Snorkblot",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "CFB",
+      "name": "LoveTrash",
       "title": "",
       "subscribers": 50000
     }
