@@ -1,16 +1,6 @@
 {
-  "updated": "2026-09-21 02:12",
+  "updated": "2026-09-22 02:17",
   "candidates": [
-    {
-      "name": "MoralityScaling",
-      "title": "",
-      "subscribers": 150000
-    },
-    {
-      "name": "PoursTea",
-      "title": "",
-      "subscribers": 100000
-    },
     {
       "name": "SipsTea",
       "title": "",
@@ -22,57 +12,67 @@
       "subscribers": 100000
     },
     {
-      "name": "clevercomebacks",
+      "name": "okbuddycinephile",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "WorkReform",
+      "name": "baseball",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "nextfuckinglevel",
+      "name": "PoursTea",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "TikTokCringe",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "BeAmazed",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "interesting",
       "title": "",
       "subscribers": 100000
     },
     {
       "name": "BlackPeopleTwitter",
       "title": "",
-      "subscribers": 50000
+      "subscribers": 100000
     },
     {
-      "name": "MurderedByWords",
+      "name": "GirlDinnerDiaries",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "MadeMeSmile",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "cringereels",
+      "name": "MoralityScaling",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "hatethissmug",
+      "name": "DestinyTheGame",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "OldSchoolCool",
+      "name": "videogames",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "oddlysatisfying",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "pics",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "LoveTrash",
+      "name": "sportsgossips",
       "title": "",
       "subscribers": 50000
     }
