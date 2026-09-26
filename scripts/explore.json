@@ -1,23 +1,18 @@
 {
-  "updated": "2026-09-25 02:21",
+  "updated": "2026-09-26 02:26",
   "candidates": [
     {
-      "name": "mildlyinfuriating",
-      "title": "",
-      "subscribers": 150000
-    },
-    {
-      "name": "SipsTea",
-      "title": "",
-      "subscribers": 150000
-    },
-    {
-      "name": "TikTokCringe",
+      "name": "pics",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "MadeMeSmile",
+      "name": "cringereels",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "mildlyinfuriating",
       "title": "",
       "subscribers": 100000
     },
@@ -27,7 +22,7 @@
       "subscribers": 100000
     },
     {
-      "name": "law",
+      "name": "nextfuckinglevel",
       "title": "",
       "subscribers": 100000
     },
@@ -37,42 +32,47 @@
       "subscribers": 100000
     },
     {
-      "name": "TopCharacterTropes",
+      "name": "mildlyinteresting",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "okbuddycinephile",
+      "name": "GirlDinnerDiaries",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "blackcats",
+      "name": "comics",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Damnthatsinteresting",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "fixedbytheduet",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "CriticalStateGlobal",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "meirl",
+      "name": "MadeMeSmile",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "news",
+      "name": "whatdoIdo",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "nextfuckinglevel",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "adhdmeme",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "pics",
+      "name": "TikTokCringe",
       "title": "",
       "subscribers": 50000
     }
