@@ -1,33 +1,8 @@
 {
-  "updated": "2026-10-01 02:58",
+  "updated": "2026-10-02 03:00",
   "candidates": [
     {
-      "name": "SipsTea",
-      "title": "",
-      "subscribers": 150000
-    },
-    {
-      "name": "baseball",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
       "name": "mildlyinfuriating",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "sportsgossips",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "bald",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "Whatcouldgowrong",
       "title": "",
       "subscribers": 100000
     },
@@ -37,42 +12,67 @@
       "subscribers": 100000
     },
     {
-      "name": "me_irl",
+      "name": "SipsTea",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "law",
+      "name": "MadeMeSmile",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "mildlyinteresting",
+      "name": "interesting",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "BrandNewSentence",
+      "name": "TopCharacterTropes",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "TierlistFills",
+      "name": "TikTokCringe",
       "title": "",
-      "subscribers": 50000
+      "subscribers": 100000
+    },
+    {
+      "name": "blackcats",
+      "title": "",
+      "subscribers": 100000
     },
     {
       "name": "NatureIsFuckingLit",
       "title": "",
-      "subscribers": 50000
+      "subscribers": 100000
     },
     {
-      "name": "UpliftingNews",
+      "name": "humor",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "ChatGPT",
+      "name": "BunnyTrials",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "clevercomebacks",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "whoathatsinteresting",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "bald",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "whatisit",
       "title": "",
       "subscribers": 50000
     }
