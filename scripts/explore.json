@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02 03:00",
+  "updated": "2026-10-03 02:47",
   "candidates": [
     {
       "name": "mildlyinfuriating",
@@ -7,12 +7,7 @@
       "subscribers": 100000
     },
     {
-      "name": "PoursTea",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "SipsTea",
+      "name": "PeterExplainsTheJoke",
       "title": "",
       "subscribers": 100000
     },
@@ -22,7 +17,7 @@
       "subscribers": 100000
     },
     {
-      "name": "interesting",
+      "name": "mildlyinteresting",
       "title": "",
       "subscribers": 100000
     },
@@ -32,47 +27,52 @@
       "subscribers": 100000
     },
     {
-      "name": "TikTokCringe",
+      "name": "antiai",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "blackcats",
+      "name": "nextfuckinglevel",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "NatureIsFuckingLit",
+      "name": "MurderedByWords",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "humor",
+      "name": "Fauxmoi",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "okbuddycinephile",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Fallout",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "BunnyTrials",
+      "name": "videogames",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "clevercomebacks",
+      "name": "SipsTea",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "whoathatsinteresting",
+      "name": "PoursTea",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "bald",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "whatisit",
+      "name": "interesting",
       "title": "",
       "subscribers": 50000
     }
