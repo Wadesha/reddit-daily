@@ -1,43 +1,18 @@
 {
-  "updated": "2026-10-03 02:47",
+  "updated": "2026-10-04 03:18",
   "candidates": [
+    {
+      "name": "MadeMeSmile",
+      "title": "",
+      "subscribers": 150000
+    },
     {
       "name": "mildlyinfuriating",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "PeterExplainsTheJoke",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "MadeMeSmile",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "mildlyinteresting",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "TopCharacterTropes",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "antiai",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "nextfuckinglevel",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "MurderedByWords",
+      "name": "oddlysatisfying",
       "title": "",
       "subscribers": 100000
     },
@@ -47,32 +22,57 @@
       "subscribers": 100000
     },
     {
-      "name": "okbuddycinephile",
+      "name": "sportsgossips",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "Fallout",
+      "name": "countwithchickenlady",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "TopCharacterTropes",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "LivestreamFail",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "videogames",
+      "name": "pics",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "SipsTea",
+      "name": "ImmigrationPathways",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "PoursTea",
+      "name": "CFB",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "interesting",
+      "name": "whatdoIdo",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "cringereels",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "askanything",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "ExpectationVsReality",
       "title": "",
       "subscribers": 50000
     }
