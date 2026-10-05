@@ -1,10 +1,15 @@
 {
-  "updated": "2026-10-04 03:18",
+  "updated": "2026-10-05 02:53",
   "candidates": [
     {
-      "name": "MadeMeSmile",
+      "name": "PoursTea",
       "title": "",
       "subscribers": 150000
+    },
+    {
+      "name": "SipsTea",
+      "title": "",
+      "subscribers": 100000
     },
     {
       "name": "mildlyinfuriating",
@@ -12,17 +17,7 @@
       "subscribers": 100000
     },
     {
-      "name": "oddlysatisfying",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "Fauxmoi",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "sportsgossips",
+      "name": "TikTokCringe",
       "title": "",
       "subscribers": 100000
     },
@@ -32,47 +27,52 @@
       "subscribers": 100000
     },
     {
-      "name": "TopCharacterTropes",
+      "name": "dashcams",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "LivestreamFail",
+      "name": "LeopardsAteMyFarm",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "interesting",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "AbsoluteUnits",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "meirl",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "news",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "pics",
+      "name": "justgalsbeingchicks",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "ImmigrationPathways",
+      "name": "WatchPeopleDieInside",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "CFB",
+      "name": "whatisit",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "whatdoIdo",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "cringereels",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "askanything",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "ExpectationVsReality",
+      "name": "moviecritic",
       "title": "",
       "subscribers": 50000
     }
