@@ -1,10 +1,15 @@
 {
-  "updated": "2026-10-07 03:10",
+  "updated": "2026-10-08 03:26",
   "candidates": [
     {
-      "name": "pics",
+      "name": "SipsTea",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 150000
+    },
+    {
+      "name": "MadeMeSmile",
+      "title": "",
+      "subscribers": 150000
     },
     {
       "name": "mildlyinfuriating",
@@ -12,27 +17,17 @@
       "subscribers": 100000
     },
     {
-      "name": "MurderedByWords",
+      "name": "PoursTea",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "GirlDinnerDiaries",
+      "name": "pics",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "videos",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "WeirdCareers",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "dashcams",
+      "name": "Fauxmoi",
       "title": "",
       "subscribers": 100000
     },
@@ -42,12 +37,27 @@
       "subscribers": 100000
     },
     {
-      "name": "TikTokDiscuss",
+      "name": "nextfuckinglevel",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "aliens",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "okbuddycinephile",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "whatisit",
+      "name": "AccidentalRenaissance",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "MapPorn",
       "title": "",
       "subscribers": 50000
     },
@@ -57,22 +67,12 @@
       "subscribers": 50000
     },
     {
-      "name": "SipsTea",
+      "name": "TopCharacterTropes",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "GuysBeingDudes",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "AbsoluteUnits",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "blunderyears",
+      "name": "texts",
       "title": "",
       "subscribers": 50000
     }
