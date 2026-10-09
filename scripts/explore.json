@@ -1,16 +1,6 @@
 {
-  "updated": "2026-10-08 03:26",
+  "updated": "2026-10-09 03:32",
   "candidates": [
-    {
-      "name": "SipsTea",
-      "title": "",
-      "subscribers": 150000
-    },
-    {
-      "name": "MadeMeSmile",
-      "title": "",
-      "subscribers": 150000
-    },
     {
       "name": "mildlyinfuriating",
       "title": "",
@@ -22,17 +12,22 @@
       "subscribers": 100000
     },
     {
-      "name": "pics",
+      "name": "meirl",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "Fauxmoi",
+      "name": "AbsoluteUnits",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "interesting",
+      "name": "MadeMeSmile",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "BlackPeopleofReddit",
       "title": "",
       "subscribers": 100000
     },
@@ -42,37 +37,42 @@
       "subscribers": 100000
     },
     {
-      "name": "aliens",
+      "name": "comics",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "okbuddycinephile",
+      "name": "MurderedByWords",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Justfuckmyshitup",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "AccidentalRenaissance",
+      "name": "ExpectationVsReality",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "MapPorn",
+      "name": "whatisit",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "cringereels",
+      "name": "baseball",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "TopCharacterTropes",
+      "name": "HomeDecorating",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "texts",
+      "name": "mildlyinteresting",
       "title": "",
       "subscribers": 50000
     }
