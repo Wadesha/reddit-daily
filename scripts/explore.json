@@ -1,13 +1,23 @@
 {
-  "updated": "2026-10-09 03:32",
+  "updated": "2026-10-10 03:12",
   "candidates": [
     {
       "name": "mildlyinfuriating",
       "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "PeterExplainsTheJoke",
+      "title": "",
       "subscribers": 100000
     },
     {
-      "name": "PoursTea",
+      "name": "TikTokCringe",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "SipsTea",
       "title": "",
       "subscribers": 100000
     },
@@ -17,22 +27,17 @@
       "subscribers": 100000
     },
     {
-      "name": "AbsoluteUnits",
+      "name": "interesting",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "MadeMeSmile",
+      "name": "nottheonion",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "BlackPeopleofReddit",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "nextfuckinglevel",
+      "name": "PoursTea",
       "title": "",
       "subscribers": 100000
     },
@@ -42,37 +47,32 @@
       "subscribers": 100000
     },
     {
-      "name": "MurderedByWords",
+      "name": "DangerousNightsCrew",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "Justfuckmyshitup",
+      "name": "Funnymemes",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "AccidentalRenaissance",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "ExpectationVsReality",
+      "name": "pics",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "whatisit",
+      "name": "Gamingcirclejerk",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "baseball",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "HomeDecorating",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "mildlyinteresting",
+      "name": "GetNoted",
       "title": "",
       "subscribers": 50000
     }
