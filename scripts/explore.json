@@ -1,23 +1,33 @@
 {
-  "updated": "2026-10-11 02:45",
+  "updated": "2026-10-12 03:08",
   "candidates": [
-    {
-      "name": "CFB",
-      "title": "",
-      "subscribers": 150000
-    },
     {
       "name": "SipsTea",
       "title": "",
       "subscribers": 150000
     },
     {
-      "name": "TikTokCringe",
+      "name": "mildlyinfuriating",
       "title": "",
       "subscribers": 150000
     },
     {
-      "name": "UkraineWarVideoReport",
+      "name": "PoursTea",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "popculturechat",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "whoathatsinteresting",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "interesting",
       "title": "",
       "subscribers": 100000
     },
@@ -27,17 +37,27 @@
       "subscribers": 100000
     },
     {
-      "name": "PoursTea",
+      "name": "Fauxmoi",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "comics",
+      "name": "videogames",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "videos",
+      "name": "PeterExplainsTheJoke",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "CuratedTumblr",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Damnthatsinteresting",
       "title": "",
       "subscribers": 100000
     },
@@ -47,32 +67,12 @@
       "subscribers": 100000
     },
     {
-      "name": "mildlyinfuriating",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "geography",
+      "name": "funComunitty",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "cringereels",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "mildlyinteresting",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "BlackPeopleofReddit",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "oddlysatisfying",
+      "name": "CFB",
       "title": "",
       "subscribers": 50000
     }
