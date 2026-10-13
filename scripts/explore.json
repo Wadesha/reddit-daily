@@ -1,15 +1,20 @@
 {
-  "updated": "2026-10-12 03:08",
+  "updated": "2026-10-13 04:24",
   "candidates": [
+    {
+      "name": "whatisit",
+      "title": "",
+      "subscribers": 100000
+    },
     {
       "name": "SipsTea",
       "title": "",
-      "subscribers": 150000
+      "subscribers": 100000
     },
     {
-      "name": "mildlyinfuriating",
+      "name": "breakingbad",
       "title": "",
-      "subscribers": 150000
+      "subscribers": 100000
     },
     {
       "name": "PoursTea",
@@ -17,12 +22,12 @@
       "subscribers": 100000
     },
     {
-      "name": "popculturechat",
+      "name": "GirlDinnerDiaries",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "whoathatsinteresting",
+      "name": "Snorkblot",
       "title": "",
       "subscribers": 100000
     },
@@ -32,27 +37,7 @@
       "subscribers": 100000
     },
     {
-      "name": "meirl",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "Fauxmoi",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "videogames",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "PeterExplainsTheJoke",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "CuratedTumblr",
+      "name": "baseball",
       "title": "",
       "subscribers": 100000
     },
@@ -62,17 +47,32 @@
       "subscribers": 100000
     },
     {
-      "name": "MadeMeSmile",
+      "name": "antiai",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "funComunitty",
+      "name": "mildlyinteresting",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "CFB",
+      "name": "videogames",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "LiveFromNewYork",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "askanything",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "Millennials",
       "title": "",
       "subscribers": 50000
     }
