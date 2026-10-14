@@ -1,18 +1,23 @@
 {
-  "updated": "2026-10-13 04:24",
+  "updated": "2026-10-14 02:34",
   "candidates": [
     {
-      "name": "whatisit",
+      "name": "mildlyinfuriating",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 150000
     },
     {
       "name": "SipsTea",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 150000
     },
     {
-      "name": "breakingbad",
+      "name": "TopCharacterTropes",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "comics",
       "title": "",
       "subscribers": 100000
     },
@@ -22,57 +27,52 @@
       "subscribers": 100000
     },
     {
-      "name": "GirlDinnerDiaries",
+      "name": "TikTokCringe",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "Snorkblot",
+      "name": "MadeMeSmile",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "interesting",
+      "name": "DangerousNightsCrew",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "baseball",
+      "name": "BlackPeopleofReddit",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "Damnthatsinteresting",
+      "name": "lovethissmug",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "antiai",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "mildlyinteresting",
+      "name": "LoveTrash",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "videogames",
+      "name": "meirl",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "LiveFromNewYork",
+      "name": "unpopularopinion",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "askanything",
+      "name": "LeopardsAteMyFarm",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "Millennials",
+      "name": "whatisit",
       "title": "",
       "subscribers": 50000
     }
