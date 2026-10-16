@@ -1,38 +1,28 @@
 {
-  "updated": "2026-10-15 02:15",
+  "updated": "2026-10-16 02:06",
   "candidates": [
     {
-      "name": "SipsTea",
+      "name": "PoursTea",
       "title": "",
       "subscribers": 150000
     },
     {
-      "name": "comics",
+      "name": "news",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "mildlyinfuriating",
+      "name": "BoyDinnerDiaries",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "PoursTea",
+      "name": "anticapitalism",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "baseball",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "TopCharacterTropes",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "GirlDinnerDiaries",
+      "name": "popculturechat",
       "title": "",
       "subscribers": 100000
     },
@@ -42,37 +32,47 @@
       "subscribers": 100000
     },
     {
-      "name": "meirl",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "Fauxmoi",
+      "name": "BlackPeopleTwitter",
       "title": "",
       "subscribers": 100000
     },
     {
       "name": "MadeMeSmile",
       "title": "",
-      "subscribers": 50000
+      "subscribers": 100000
     },
     {
-      "name": "Steam",
+      "name": "lovethissmug",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "nextfuckinglevel",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "BlackPeopleofReddit",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "Seattle",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "videogames",
+      "name": "hatethissmug",
       "title": "",
       "subscribers": 50000
     },
     {
       "name": "joebuddennetwork",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "SipsTea",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "unpopularopinion",
       "title": "",
       "subscribers": 50000
     }
