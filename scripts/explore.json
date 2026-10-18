@@ -1,23 +1,28 @@
 {
-  "updated": "2026-10-17 02:00",
+  "updated": "2026-10-18 01:59",
   "candidates": [
+    {
+      "name": "SipsTea",
+      "title": "",
+      "subscribers": 250000
+    },
+    {
+      "name": "CFB",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "interesting",
+      "title": "",
+      "subscribers": 150000
+    },
     {
       "name": "mildlyinfuriating",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "mildlyinteresting",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "SipsTea",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "BlackPeopleofReddit",
+      "name": "BrandNewSentence",
       "title": "",
       "subscribers": 100000
     },
@@ -27,52 +32,47 @@
       "subscribers": 100000
     },
     {
-      "name": "okbuddycinephile",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "DeadlockTheGame",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "xbox",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "wholesomememes",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "humor",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "BrandNewSentence",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "news",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "oddlysatisfying",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
       "name": "MadeMeSmile",
       "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "MurderedByWords",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Damnthatsinteresting",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "TopCharacterTropes",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "SpaceXBets",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "homestead",
+      "title": "",
       "subscribers": 50000
     },
     {
-      "name": "whatdoIdo",
+      "name": "AnimalsBeingDerps",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "popculturechat",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "Infuriating",
       "title": "",
       "subscribers": 50000
     }
