@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20 02:30",
+  "updated": "2026-10-21 02:25",
   "candidates": [
     {
       "name": "mildlyinfuriating",
@@ -9,6 +9,31 @@
     {
       "name": "PoursTea",
       "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "Ohio",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "SipsTea",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "law",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "meirl",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "nextfuckinglevel",
+      "title": "",
       "subscribers": 100000
     },
     {
@@ -17,62 +42,37 @@
       "subscribers": 100000
     },
     {
-      "name": "NatureIsFuckingLit",
+      "name": "DeadlockTheGame",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "videos",
+      "name": "BlackPeopleofReddit",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "Wellthatsucks",
+      "name": "whenthe",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "comics",
+      "name": "WorkReform",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "popculturechat",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "Steam",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "anticapitalism",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "TopCharacterTropes",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "bald",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "mildlyinteresting",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "meirl",
+      "name": "StandUpComedy",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "law",
+      "name": "OneOrangeBraincell",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "okbuddycinephile",
       "title": "",
       "subscribers": 50000
     }
