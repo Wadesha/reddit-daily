@@ -1,13 +1,13 @@
 {
-  "updated": "2026-10-22 02:20",
+  "updated": "2026-10-23 02:25",
   "candidates": [
     {
-      "name": "mildlyinfuriating",
+      "name": "SipsTea",
       "title": "",
       "subscribers": 150000
     },
     {
-      "name": "interesting",
+      "name": "mildlyinfuriating",
       "title": "",
       "subscribers": 150000
     },
@@ -17,29 +17,54 @@
       "subscribers": 100000
     },
     {
-      "name": "SipsTea",
+      "name": "law",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "TopCharacterTropes",
+      "name": "interesting",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "MadeMeSmile",
+      "name": "PoursTea",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "texts",
+      "name": "BoyDinnerDiaries",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "anticapitalism",
+      "name": "LeopardsAteMyFarm",
       "title": "",
       "subscribers": 100000
+    },
+    {
+      "name": "BlackPeopleofReddit",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Damnthatsinteresting",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "okbuddycinephile",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "BeAmazed",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "TikTokCringe",
+      "title": "",
+      "subscribers": 50000
     },
     {
       "name": "masseffect",
@@ -47,32 +72,7 @@
       "subscribers": 50000
     },
     {
-      "name": "Millennials",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "videogames",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "Justfuckmyshitup",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "PoursTea",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "AITApod",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "lovethissmug",
+      "name": "Multifandom",
       "title": "",
       "subscribers": 50000
     }
