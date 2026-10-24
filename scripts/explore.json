@@ -1,53 +1,18 @@
 {
-  "updated": "2026-10-23 02:25",
+  "updated": "2026-10-24 02:23",
   "candidates": [
-    {
-      "name": "SipsTea",
-      "title": "",
-      "subscribers": 150000
-    },
     {
       "name": "mildlyinfuriating",
       "title": "",
-      "subscribers": 150000
+      "subscribers": 100000
     },
     {
-      "name": "meirl",
+      "name": "MadeMeSmile",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "law",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "interesting",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "PoursTea",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "BoyDinnerDiaries",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "LeopardsAteMyFarm",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "BlackPeopleofReddit",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "Damnthatsinteresting",
+      "name": "whenthe",
       "title": "",
       "subscribers": 100000
     },
@@ -57,12 +22,47 @@
       "subscribers": 100000
     },
     {
-      "name": "BeAmazed",
+      "name": "AbsoluteUnits",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "TikTokCringe",
+      "name": "clevercomebacks",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "PoursTea",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "OldSchoolCool",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "SipsTea",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "interesting",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "brasil",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "BeAmazed",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "AIO",
       "title": "",
       "subscribers": 50000
     },
@@ -72,7 +72,7 @@
       "subscribers": 50000
     },
     {
-      "name": "Multifandom",
+      "name": "comics",
       "title": "",
       "subscribers": 50000
     }
