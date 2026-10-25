@@ -1,33 +1,28 @@
 {
-  "updated": "2026-10-24 02:23",
+  "updated": "2026-10-25 02:10",
   "candidates": [
+    {
+      "name": "SipsTea",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "Anticonsumption",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "meirl",
+      "title": "",
+      "subscribers": 100000
+    },
     {
       "name": "mildlyinfuriating",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "MadeMeSmile",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "whenthe",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "okbuddycinephile",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "AbsoluteUnits",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "clevercomebacks",
+      "name": "PeterExplainsTheJoke",
       "title": "",
       "subscribers": 100000
     },
@@ -37,42 +32,47 @@
       "subscribers": 100000
     },
     {
-      "name": "OldSchoolCool",
+      "name": "MadeMeSmile",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "SipsTea",
+      "name": "videos",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "BlackPeopleofReddit",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "TopCharacterTropes",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "BoyDinnerDiaries",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "interesting",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "brasil",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "BeAmazed",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "AIO",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "masseffect",
+      "name": "Ohio",
       "title": "",
       "subscribers": 50000
     },
     {
       "name": "comics",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "pics",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "AbsoluteUnits",
       "title": "",
       "subscribers": 50000
     }
