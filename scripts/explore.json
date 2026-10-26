@@ -1,33 +1,33 @@
 {
-  "updated": "2026-10-25 02:10",
+  "updated": "2026-10-26 02:11",
   "candidates": [
-    {
-      "name": "SipsTea",
-      "title": "",
-      "subscribers": 150000
-    },
-    {
-      "name": "Anticonsumption",
-      "title": "",
-      "subscribers": 150000
-    },
-    {
-      "name": "meirl",
-      "title": "",
-      "subscribers": 100000
-    },
     {
       "name": "mildlyinfuriating",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 150000
     },
     {
-      "name": "PeterExplainsTheJoke",
+      "name": "PoursTea",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "PoursTea",
+      "name": "SipsTea",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "MurderedByWords",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "antimeme",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "meirl",
       "title": "",
       "subscribers": 100000
     },
@@ -37,32 +37,22 @@
       "subscribers": 100000
     },
     {
-      "name": "videos",
+      "name": "oddlysatisfying",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "BlackPeopleofReddit",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "TopCharacterTropes",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "BoyDinnerDiaries",
+      "name": "news",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "Ohio",
+      "name": "Fauxmoi",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "comics",
+      "name": "interesting",
       "title": "",
       "subscribers": 50000
     },
@@ -72,7 +62,17 @@
       "subscribers": 50000
     },
     {
-      "name": "AbsoluteUnits",
+      "name": "GirlDinnerDiaries",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "hatethissmug",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "CozyPlaces",
       "title": "",
       "subscribers": 50000
     }
