@@ -1,15 +1,10 @@
 {
-  "updated": "2026-10-26 02:11",
+  "updated": "2026-10-27 02:48",
   "candidates": [
     {
       "name": "mildlyinfuriating",
       "title": "",
-      "subscribers": 150000
-    },
-    {
-      "name": "PoursTea",
-      "title": "",
-      "subscribers": 100000
+      "subscribers": 200000
     },
     {
       "name": "SipsTea",
@@ -17,62 +12,67 @@
       "subscribers": 100000
     },
     {
-      "name": "MurderedByWords",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "antimeme",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "meirl",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "MadeMeSmile",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "oddlysatisfying",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
       "name": "news",
       "title": "",
-      "subscribers": 50000
+      "subscribers": 100000
     },
     {
-      "name": "Fauxmoi",
+      "name": "BeAmazed",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "PoursTea",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "videos",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "me_irl",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "dashcams",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "antiai",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "classicwow",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "interesting",
+      "name": "whoathatsinteresting",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "pics",
+      "name": "TopCharacterTropes",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "GirlDinnerDiaries",
+      "name": "leagueoflegends",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "hatethissmug",
+      "name": "nextfuckinglevel",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "CozyPlaces",
+      "name": "Whatcouldgowrong",
       "title": "",
       "subscribers": 50000
     }
