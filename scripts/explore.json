@@ -1,13 +1,18 @@
 {
-  "updated": "2026-10-27 02:48",
+  "updated": "2026-10-28 02:56",
   "candidates": [
+    {
+      "name": "SipsTea",
+      "title": "",
+      "subscribers": 150000
+    },
     {
       "name": "mildlyinfuriating",
       "title": "",
-      "subscribers": 200000
+      "subscribers": 150000
     },
     {
-      "name": "SipsTea",
+      "name": "popculturechat",
       "title": "",
       "subscribers": 100000
     },
@@ -17,12 +22,32 @@
       "subscribers": 100000
     },
     {
-      "name": "BeAmazed",
+      "name": "sportsgossips",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "PoursTea",
+      "name": "mildlyinteresting",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "WeirdCareers",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "LivestreamFail",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Millennials",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "baseball",
       "title": "",
       "subscribers": 100000
     },
@@ -32,47 +57,22 @@
       "subscribers": 100000
     },
     {
-      "name": "me_irl",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "dashcams",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "antiai",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "classicwow",
+      "name": "interesting",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "whoathatsinteresting",
+      "name": "delta",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "TopCharacterTropes",
+      "name": "anticapitalism",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "leagueoflegends",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "nextfuckinglevel",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "Whatcouldgowrong",
+      "name": "LiveFromNewYork",
       "title": "",
       "subscribers": 50000
     }
