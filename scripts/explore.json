@@ -1,18 +1,13 @@
 {
-  "updated": "2026-10-28 02:56",
+  "updated": "2026-10-29 03:21",
   "candidates": [
-    {
-      "name": "SipsTea",
-      "title": "",
-      "subscribers": 150000
-    },
     {
       "name": "mildlyinfuriating",
       "title": "",
       "subscribers": 150000
     },
     {
-      "name": "popculturechat",
+      "name": "SipsTea",
       "title": "",
       "subscribers": 100000
     },
@@ -22,57 +17,62 @@
       "subscribers": 100000
     },
     {
-      "name": "sportsgossips",
+      "name": "meirl",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "mildlyinteresting",
+      "name": "NonPoliticalTwitter",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "WeirdCareers",
+      "name": "PoursTea",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "LivestreamFail",
+      "name": "Whatcouldgowrong",
       "title": "",
       "subscribers": 100000
+    },
+    {
+      "name": "MadeMeSmile",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "oddlysatisfying",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "me_irl",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "Infuriating",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "lotr",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "hatethissmug",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "BeAmazed",
+      "title": "",
+      "subscribers": 50000
     },
     {
       "name": "Millennials",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "baseball",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "videos",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "interesting",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "delta",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "anticapitalism",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "LiveFromNewYork",
       "title": "",
       "subscribers": 50000
     }
