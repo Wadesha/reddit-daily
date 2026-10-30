@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29 03:21",
+  "updated": "2026-10-30 03:23",
   "candidates": [
     {
       "name": "mildlyinfuriating",
@@ -7,7 +7,27 @@
       "subscribers": 150000
     },
     {
+      "name": "MadeMeSmile",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "meirl",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
       "name": "SipsTea",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "marvelstudios",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "comics",
       "title": "",
       "subscribers": 100000
     },
@@ -17,12 +37,22 @@
       "subscribers": 100000
     },
     {
-      "name": "meirl",
+      "name": "interesting",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "NonPoliticalTwitter",
+      "name": "amiuglytruth",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "okbuddycinephile",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "nextfuckinglevel",
       "title": "",
       "subscribers": 100000
     },
@@ -32,47 +62,17 @@
       "subscribers": 100000
     },
     {
-      "name": "Whatcouldgowrong",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "MadeMeSmile",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "oddlysatisfying",
+      "name": "baseball",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "me_irl",
+      "name": "TopGear",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "Infuriating",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "lotr",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "hatethissmug",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "BeAmazed",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "Millennials",
+      "name": "dashcams",
       "title": "",
       "subscribers": 50000
     }
