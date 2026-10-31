@@ -1,38 +1,13 @@
 {
-  "updated": "2026-10-30 03:23",
+  "updated": "2026-10-31 03:08",
   "candidates": [
     {
       "name": "mildlyinfuriating",
       "title": "",
-      "subscribers": 150000
-    },
-    {
-      "name": "MadeMeSmile",
-      "title": "",
-      "subscribers": 150000
-    },
-    {
-      "name": "meirl",
-      "title": "",
-      "subscribers": 150000
+      "subscribers": 200000
     },
     {
       "name": "SipsTea",
-      "title": "",
-      "subscribers": 150000
-    },
-    {
-      "name": "marvelstudios",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "comics",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "news",
       "title": "",
       "subscribers": 100000
     },
@@ -42,17 +17,27 @@
       "subscribers": 100000
     },
     {
-      "name": "amiuglytruth",
+      "name": "LoveTrash",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "okbuddycinephile",
+      "name": "mildlyinteresting",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "nextfuckinglevel",
+      "name": "MadeMeSmile",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "GirlDinnerDiaries",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "whenthe",
       "title": "",
       "subscribers": 100000
     },
@@ -62,17 +47,32 @@
       "subscribers": 100000
     },
     {
+      "name": "nextfuckinglevel",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "DeadlockTheGame",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "pics",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "TopCharacterTropes",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
       "name": "baseball",
       "title": "",
-      "subscribers": 50000
+      "subscribers": 100000
     },
     {
-      "name": "TopGear",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "dashcams",
+      "name": "ArcRaiders",
       "title": "",
       "subscribers": 50000
     }
