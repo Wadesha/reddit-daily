@@ -1,23 +1,13 @@
 {
-  "updated": "2026-10-31 03:08",
+  "updated": "2026-11-01 03:02",
   "candidates": [
-    {
-      "name": "mildlyinfuriating",
-      "title": "",
-      "subscribers": 200000
-    },
     {
       "name": "SipsTea",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "interesting",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "LoveTrash",
+      "name": "BlackPeopleofReddit",
       "title": "",
       "subscribers": 100000
     },
@@ -27,37 +17,22 @@
       "subscribers": 100000
     },
     {
-      "name": "MadeMeSmile",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "GirlDinnerDiaries",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "whenthe",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
       "name": "PoursTea",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "nextfuckinglevel",
+      "name": "meirl",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "DeadlockTheGame",
+      "name": "PeterExplainsTheJoke",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "pics",
+      "name": "interesting",
       "title": "",
       "subscribers": 100000
     },
@@ -67,12 +42,37 @@
       "subscribers": 100000
     },
     {
-      "name": "baseball",
+      "name": "nextfuckinglevel",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "ArcRaiders",
+      "name": "mildlyinfuriating",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "whatdoIdo",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "MadeMeSmile",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "leagueoflegends",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "ProtonMail",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "WeirdCareers",
       "title": "",
       "subscribers": 50000
     }
