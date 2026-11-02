@@ -1,13 +1,28 @@
 {
-  "updated": "2026-11-01 03:02",
+  "updated": "2026-11-02 03:13",
   "candidates": [
+    {
+      "name": "PoursTea",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "TopCharacterTropes",
+      "title": "",
+      "subscribers": 150000
+    },
+    {
+      "name": "mildlyinfuriating",
+      "title": "",
+      "subscribers": 100000
+    },
     {
       "name": "SipsTea",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "BlackPeopleofReddit",
+      "name": "MadeMeSmile",
       "title": "",
       "subscribers": 100000
     },
@@ -17,62 +32,47 @@
       "subscribers": 100000
     },
     {
-      "name": "PoursTea",
+      "name": "interesting",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "WeirdCareers",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Fauxmoi",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Damnthatsinteresting",
       "title": "",
       "subscribers": 100000
     },
     {
       "name": "meirl",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 50000
     },
     {
-      "name": "PeterExplainsTheJoke",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "interesting",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "TopCharacterTropes",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "nextfuckinglevel",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "mildlyinfuriating",
+      "name": "BeAmazed",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "whatdoIdo",
+      "name": "formuladank",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "MadeMeSmile",
+      "name": "dashcams",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "leagueoflegends",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "ProtonMail",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "WeirdCareers",
+      "name": "sportsgossips",
       "title": "",
       "subscribers": 50000
     }
