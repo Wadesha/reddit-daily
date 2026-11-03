@@ -1,33 +1,18 @@
 {
-  "updated": "2026-11-02 03:13",
+  "updated": "2026-11-03 04:28",
   "candidates": [
+    {
+      "name": "SipsTea",
+      "title": "",
+      "subscribers": 150000
+    },
     {
       "name": "PoursTea",
       "title": "",
       "subscribers": 150000
     },
     {
-      "name": "TopCharacterTropes",
-      "title": "",
-      "subscribers": 150000
-    },
-    {
-      "name": "mildlyinfuriating",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "SipsTea",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "MadeMeSmile",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "mildlyinteresting",
+      "name": "TopTrendingNewsUSA",
       "title": "",
       "subscribers": 100000
     },
@@ -37,7 +22,22 @@
       "subscribers": 100000
     },
     {
-      "name": "WeirdCareers",
+      "name": "dashcams",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "MadeMeSmile",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "mildlyinfuriating",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "pics",
       "title": "",
       "subscribers": 100000
     },
@@ -47,32 +47,32 @@
       "subscribers": 100000
     },
     {
-      "name": "Damnthatsinteresting",
+      "name": "TopCharacterTropes",
       "title": "",
       "subscribers": 100000
     },
     {
       "name": "meirl",
       "title": "",
-      "subscribers": 50000
+      "subscribers": 100000
     },
     {
-      "name": "BeAmazed",
+      "name": "bald",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "formuladank",
+      "name": "humor",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "dashcams",
+      "name": "WatchPeopleDieInside",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "sportsgossips",
+      "name": "mildyinteresting",
       "title": "",
       "subscribers": 50000
     }
