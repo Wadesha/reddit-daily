@@ -1,28 +1,18 @@
 {
-  "updated": "2026-11-04 03:47",
+  "updated": "2026-11-05 04:05",
   "candidates": [
     {
-      "name": "Fauxmoi",
-      "title": "",
-      "subscribers": 150000
-    },
-    {
-      "name": "pics",
+      "name": "PoursTea",
       "title": "",
       "subscribers": 150000
     },
     {
       "name": "SipsTea",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 150000
     },
     {
-      "name": "FortWorth",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "BlackPeopleofReddit",
+      "name": "dashcams",
       "title": "",
       "subscribers": 100000
     },
@@ -32,22 +22,12 @@
       "subscribers": 100000
     },
     {
-      "name": "Atlanta",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "PoursTea",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "meirl",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
       "name": "anticapitalism",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "mildlyinfuriating",
       "title": "",
       "subscribers": 100000
     },
@@ -57,22 +37,42 @@
       "subscribers": 100000
     },
     {
-      "name": "law",
+      "name": "WorkReform",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "MadeMeSmile",
+      "name": "TopCharacterTropes",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "whatdoIdo",
+      "name": "Ohio",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "BlackPeopleofReddit",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "me_irl",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "NewsThread",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "mildlyinteresting",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "mildyinteresting",
+      "name": "joebuddennetwork",
       "title": "",
       "subscribers": 50000
     }
