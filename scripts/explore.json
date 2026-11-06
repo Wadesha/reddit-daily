@@ -1,53 +1,43 @@
 {
-  "updated": "2026-11-05 04:05",
+  "updated": "2026-11-06 04:02",
   "candidates": [
     {
-      "name": "PoursTea",
+      "name": "mildlyinfuriating",
+      "title": "",
+      "subscribers": 200000
+    },
+    {
+      "name": "anticapitalism",
       "title": "",
       "subscribers": 150000
     },
     {
       "name": "SipsTea",
       "title": "",
-      "subscribers": 150000
+      "subscribers": 100000
     },
     {
-      "name": "dashcams",
+      "name": "StockMarket",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "interesting",
+      "name": "news",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "anticapitalism",
+      "name": "leagueoflegends",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "mildlyinfuriating",
+      "name": "BeAmazed",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "comics",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "WorkReform",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "TopCharacterTropes",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "Ohio",
+      "name": "Fauxmoi",
       "title": "",
       "subscribers": 100000
     },
@@ -57,24 +47,34 @@
       "subscribers": 100000
     },
     {
-      "name": "me_irl",
+      "name": "meirl",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "NewsThread",
+      "name": "okbuddycinephile",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "mildlyinteresting",
+      "name": "PeterExplainsTheJoke",
       "title": "",
-      "subscribers": 50000
+      "subscribers": 100000
     },
     {
-      "name": "joebuddennetwork",
+      "name": "lovethissmug",
       "title": "",
-      "subscribers": 50000
+      "subscribers": 100000
+    },
+    {
+      "name": "PoursTea",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "whenthe",
+      "title": "",
+      "subscribers": 100000
     }
   ]
 }
