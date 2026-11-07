@@ -1,23 +1,18 @@
 {
-  "updated": "2026-11-06 04:02",
+  "updated": "2026-11-07 03:39",
   "candidates": [
     {
-      "name": "mildlyinfuriating",
-      "title": "",
-      "subscribers": 200000
-    },
-    {
-      "name": "anticapitalism",
-      "title": "",
-      "subscribers": 150000
-    },
-    {
-      "name": "SipsTea",
+      "name": "meirl",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "StockMarket",
+      "name": "anticapitalism",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "SipsTea",
       "title": "",
       "subscribers": 100000
     },
@@ -27,54 +22,59 @@
       "subscribers": 100000
     },
     {
-      "name": "leagueoflegends",
+      "name": "mildlyinfuriating",
       "title": "",
       "subscribers": 100000
+    },
+    {
+      "name": "videos",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "mildlyinteresting",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "sportsgossips",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "pics",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "interesting",
+      "title": "",
+      "subscribers": 50000
     },
     {
       "name": "BeAmazed",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 50000
     },
     {
-      "name": "Fauxmoi",
+      "name": "NatureIsFuckingLit",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 50000
     },
     {
-      "name": "BlackPeopleofReddit",
+      "name": "BlackPeopleTwitter",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 50000
     },
     {
-      "name": "meirl",
+      "name": "Letterboxd",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 50000
     },
     {
-      "name": "okbuddycinephile",
+      "name": "Damnthatsinteresting",
       "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "PeterExplainsTheJoke",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "lovethissmug",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "PoursTea",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "whenthe",
-      "title": "",
-      "subscribers": 100000
+      "subscribers": 50000
     }
   ]
 }
