@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07 03:39",
+  "updated": "2026-11-08 03:11",
   "candidates": [
     {
       "name": "meirl",
@@ -7,7 +7,7 @@
       "subscribers": 100000
     },
     {
-      "name": "anticapitalism",
+      "name": "Damnthatsinteresting",
       "title": "",
       "subscribers": 100000
     },
@@ -17,27 +17,7 @@
       "subscribers": 100000
     },
     {
-      "name": "news",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "mildlyinfuriating",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "videos",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "mildlyinteresting",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "sportsgossips",
+      "name": "TopCharacterTropes",
       "title": "",
       "subscribers": 100000
     },
@@ -47,32 +27,52 @@
       "subscribers": 100000
     },
     {
-      "name": "interesting",
+      "name": "mildlyinteresting",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "comics",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "BlackPeopleofReddit",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "stupidpeoplefacebook",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "BeAmazed",
+      "name": "HollowKnight",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "NatureIsFuckingLit",
+      "name": "LoveTrash",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "BlackPeopleTwitter",
+      "name": "antiai",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "Letterboxd",
+      "name": "TikTokCringe",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "Damnthatsinteresting",
+      "name": "lovethissmug",
+      "title": "",
+      "subscribers": 50000
+    },
+    {
+      "name": "whatisit",
       "title": "",
       "subscribers": 50000
     }
