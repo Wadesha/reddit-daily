@@ -1,18 +1,38 @@
 {
-  "updated": "2026-11-09 03:32",
+  "updated": "2026-11-10 05:05",
   "candidates": [
     {
       "name": "mildlyinfuriating",
       "title": "",
+      "subscribers": 200000
+    },
+    {
+      "name": "SipsTea",
+      "title": "",
       "subscribers": 150000
     },
     {
-      "name": "cringereels",
+      "name": "DC_Cinematic",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "TopCharacterTropes",
+      "name": "interesting",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "okbuddycinephile",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "pics",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "MadeMeSmile",
       "title": "",
       "subscribers": 100000
     },
@@ -22,24 +42,9 @@
       "subscribers": 100000
     },
     {
-      "name": "whatdoIdo",
+      "name": "MurderedByWords",
       "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "leagueoflegends",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "Whatcouldgowrong",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "JoeBuddenPodcasts",
-      "title": "",
-      "subscribers": 50000
+      "subscribers": 100000
     },
     {
       "name": "meirl",
@@ -47,32 +52,27 @@
       "subscribers": 50000
     },
     {
-      "name": "lovethissmug",
+      "name": "NonPoliticalTwitter",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "pics",
+      "name": "popculturechat",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "texts",
+      "name": "wowforever",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "MadeMeSmile",
+      "name": "blackcats",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "Amazing",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "CFB",
+      "name": "whatisit",
       "title": "",
       "subscribers": 50000
     }
