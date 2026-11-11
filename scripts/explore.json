@@ -1,18 +1,13 @@
 {
-  "updated": "2026-11-10 05:05",
+  "updated": "2026-11-11 03:39",
   "candidates": [
     {
       "name": "mildlyinfuriating",
       "title": "",
-      "subscribers": 200000
-    },
-    {
-      "name": "SipsTea",
-      "title": "",
       "subscribers": 150000
     },
     {
-      "name": "DC_Cinematic",
+      "name": "SipsTea",
       "title": "",
       "subscribers": 100000
     },
@@ -22,12 +17,12 @@
       "subscribers": 100000
     },
     {
-      "name": "okbuddycinephile",
+      "name": "videos",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "pics",
+      "name": "anticapitalism",
       "title": "",
       "subscribers": 100000
     },
@@ -37,42 +32,47 @@
       "subscribers": 100000
     },
     {
-      "name": "Fauxmoi",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
       "name": "MurderedByWords",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "meirl",
+      "name": "law",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "DCU_",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "NorthCarolina",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Damnthatsinteresting",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "NonPoliticalTwitter",
+      "name": "Millennials",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "popculturechat",
+      "name": "PS5",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "wowforever",
+      "name": "RandomVideos",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "blackcats",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "whatisit",
+      "name": "BlackPeopleofReddit",
       "title": "",
       "subscribers": 50000
     }
