@@ -1,20 +1,10 @@
 {
-  "updated": "2026-11-13 03:58",
+  "updated": "2026-11-14 03:57",
   "candidates": [
-    {
-      "name": "mildlyinfuriating",
-      "title": "",
-      "subscribers": 150000
-    },
-    {
-      "name": "meirl",
-      "title": "",
-      "subscribers": 100000
-    },
     {
       "name": "news",
       "title": "",
-      "subscribers": 100000
+      "subscribers": 150000
     },
     {
       "name": "SipsTea",
@@ -22,57 +12,67 @@
       "subscribers": 100000
     },
     {
-      "name": "shittymoviedetails",
+      "name": "WeirdCareers",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "popculturechat",
+      "name": "meirl",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "MadeMeSmile",
+      "name": "Wellthatsucks",
       "title": "",
       "subscribers": 100000
     },
     {
-      "name": "sysadmin",
+      "name": "HistoryMemes",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "dcu",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Millennials",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "whenthe",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "lovethissmug",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "TopCharacterTropes",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "BlackPeopleofReddit",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "askanything",
+      "name": "oddlysatisfying",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "interesting",
+      "name": "NoStupidQuestions",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "Fauxmoi",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "Outlook",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "GirlDinnerDiaries",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "texts",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "NewsThread",
+      "name": "delta",
       "title": "",
       "subscribers": 50000
     }
