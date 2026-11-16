@@ -1,13 +1,43 @@
 {
-  "updated": "2026-11-15 03:40",
+  "updated": "2026-11-16 03:40",
   "candidates": [
     {
-      "name": "mildlyinfuriating",
+      "name": "SipsTea",
       "title": "",
       "subscribers": 150000
     },
     {
-      "name": "SipsTea",
+      "name": "anticapitalism",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "pics",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "mildlyinteresting",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "interesting",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "BoyDinnerDiaries",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "Fauxmoi",
+      "title": "",
+      "subscribers": 100000
+    },
+    {
+      "name": "FavoriteCharacter",
       "title": "",
       "subscribers": 100000
     },
@@ -17,17 +47,7 @@
       "subscribers": 100000
     },
     {
-      "name": "JustGuysBeingDudes",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "TopCharacterTropes",
-      "title": "",
-      "subscribers": 100000
-    },
-    {
-      "name": "countwithchickenlady",
+      "name": "BlackPeopleofReddit",
       "title": "",
       "subscribers": 100000
     },
@@ -37,42 +57,22 @@
       "subscribers": 100000
     },
     {
-      "name": "leagueoflegends",
+      "name": "CrappyDesign",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "anticapitalism",
+      "name": "sportsgossips",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "whatisit",
+      "name": "GTA6unmoderated",
       "title": "",
       "subscribers": 50000
     },
     {
-      "name": "meirl",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "askanything",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "ufc",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "dogpictures",
-      "title": "",
-      "subscribers": 50000
-    },
-    {
-      "name": "MadeMeSmile",
+      "name": "mildlyinfuriating",
       "title": "",
       "subscribers": 50000
     }
